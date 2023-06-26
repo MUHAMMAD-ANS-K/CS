@@ -18,5 +18,5 @@ int main(void)
    {
         c = get_int("Size: ");
    }
-   while(c > 0);
+   while(c < 0);
 }
