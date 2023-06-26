@@ -2,6 +2,8 @@
 
 int main(void)
 {
-    string i = "Meow"
-    printf("%s", i)
+    for(i = 0; i < 3; i++)
+    {
+        printf("meow\n");
+    }
 }
