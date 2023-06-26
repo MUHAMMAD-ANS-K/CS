@@ -16,8 +16,7 @@ int main(void)
    int c;
    do
    {
-        printf("||");
-        c++;
+        c = get_int("Size: ");
    }
    while(c < 3);
 }
