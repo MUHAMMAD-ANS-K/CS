@@ -13,10 +13,5 @@ int main(void)
     }
     printf("\n");
    }
-   int c;
-   do
-   {
-        c = get_int("Size: ");
-   }
-   while(c < 0);
+
 }
