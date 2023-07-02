@@ -4,8 +4,12 @@
 int main(void)
 {
     int n = get_size();
-    
+    printgrid(n);
 }
+
+
+int get_size = int c;
+
 
 
 
