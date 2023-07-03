@@ -15,7 +15,12 @@ int main(void)
         g = get_int("Goal number of llamas: ");
 
     }
-    while(g < start);
-    years = 0;
-    while()
+    while(g < s);
+    int years = 0;
+    while(s < g)
+    {
+        s += 1/12*s;
+        years++;
+    }
+    printf("Years: %i\n",years);
 }
