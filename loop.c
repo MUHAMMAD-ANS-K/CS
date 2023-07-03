@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 int get_size(void);
-void printgrid(size);
+void printgrid(int size);
 
 int main(void)
 {
@@ -18,12 +18,13 @@ int get_size(void)
         c = get_int("Size: ");
     }
     while(c < 0);
+    return c;
 }
-void printgrid(size)
+void printgrid(int size)
 {
-    for(i = 0;i < c;i++)
+    for(int i = 0;i < size;i++)
     {
-        for(j = 0;j < c;j++)
+        for(int j = 0;j < size;j++)
         {
             printf("#");
         }printf("\n");
