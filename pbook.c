@@ -4,7 +4,7 @@
 int main(void)
 {
     string name = get_string("Name: ");
-    string age = get_string("Age: ");
+    int age = get_int("Age: ");
     string number = get_string("Number: ");
-    printf("%s %s %s\n",name,age,number);
+    printf("%s %i %s\n",name,age,number);
     }
