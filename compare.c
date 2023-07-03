@@ -5,11 +5,11 @@
     {
         int x = get_int("what is x?\n");
         int y = get_int("what is y?\n");
-        if(x<y)
+        if(x < y)
         {
             printf("x is less than y\n");
         }
-        else if(x>y)
+        else if(x > y)
         {
             printf("x is greter than y\n");
         }
