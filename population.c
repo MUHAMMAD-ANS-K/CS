@@ -3,10 +3,19 @@
 
 int main(void)
 {
-    int s = get_int("Starting number of llamas: ");
-    int g = get_int("Goal number of llamas: ");
-    if()
+    int s;
+    do
     {
-        
+        s = get_int("Starting number of llamas: ");
     }
+    while(s < 9);
+    int g;
+    do
+    {
+        g = get_int("Goal number of llamas: ");
+
+    }
+    while(g < start);
+    years = 0;
+    while()
 }
