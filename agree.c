@@ -4,7 +4,7 @@
 int main(void)
 {
     char c = get_char("Do you agree?\n");
-    
+
     if(c == 'y' || c == 'Y')
     {
         printf("Agreed\n");
@@ -13,4 +13,4 @@ int main(void)
     {
         printf("Not Agreed\n");
     }
-}
+}wget https://cdn.cs50.net/2022/fall/labs/1/debug.c//
