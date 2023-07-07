@@ -13,4 +13,4 @@ int main(void)
     {
         printf("Not Agreed\n");
     }
-}wget https://cdn.cs50.net/2022/fall/labs/1/debug.c//
+}
