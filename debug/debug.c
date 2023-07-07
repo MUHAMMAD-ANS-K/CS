@@ -7,4 +7,3 @@ int main(void)
     string location = get_string("Where do you live? ");
     printf("Hello, %s, from %s!\n", name, location);
 }
-wget https://cdn.cs50.net/2022/fall/labs/1/half.c
