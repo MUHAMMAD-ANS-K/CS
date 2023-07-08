@@ -32,7 +32,7 @@ bool prime(int number)
 {
     for(int j = 2; j < number; j++)
     {
-       int remainder = (%)number/j;
+       int remainder = number%j;
     }printf("%i\n",remainder);
     return false;
 }
