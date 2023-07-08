@@ -35,7 +35,6 @@ bool prime(int number)
     {
         r = number%j;
     }
-    printf("%i\n",r);
     if(r == 0)
     {
         return false;
