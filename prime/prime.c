@@ -35,6 +35,7 @@ bool prime(int number)
     {
        int r = number%j;
        j++;
+       return r;
     }
     if(r == 0)
     {
