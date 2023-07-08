@@ -21,7 +21,7 @@ float half(float bill, float tax, int tip)
     bill = bill/2;
     tax = tax/2;
     tip = tip/2;
-    tax *= bill
-    tip *= bill
+    tax *= bill;
+    tip *= bill;
     return bill,tax,tip;
 }
