@@ -16,12 +16,12 @@ int main(void)
 
     }
     while(g < s);
-    int years = 0;
+    double years = 0;
     while(s < g)
     {
-        s += s/3;
-        s -= s/4;
+        s = s + s/3;
+        s = s - s/4;
         years++;
     }
-    printf("Years: %i\n",years);
+    printf("Years: %f\n",years);
 }
