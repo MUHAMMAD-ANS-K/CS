@@ -1,12 +1,25 @@
 #include <stdio.h>
 #include <cs50.h>
+void print_rightpyramid(int n);
 
 int main (void)
 {
     int h = get_int("Height: ");
-    for(int i = 0; i < h; i++)
+    print_rightpyramid(h);
+}
+
+
+
+
+
+
+
+
+void print_rightpyramid(int n)
+{
+    for(int i = 0; i < n; i++)
     {
-       for(int j = h; j > i;j--)
+       for(int j = n; j > i;j--)
         {
             printf(" ");
         }
