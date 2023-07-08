@@ -16,7 +16,7 @@ int main(void)
 
     }
     while(g < s);
-    double years = 0;
+    int years = 0;
     while(s < g)
     {
         s = s + s/3;
