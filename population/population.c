@@ -19,7 +19,8 @@ int main(void)
     int years = 0;
     while(s < g)
     {
-        s += s/12;
+        s += s/3;
+        s -= s/4;
         years++;
     }
     printf("Years: %i\n",years);
