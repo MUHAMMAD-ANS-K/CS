@@ -11,6 +11,6 @@ int main(void)
     while (h > 8 || h < 2);
     for(int i = 0; i < h; i++)
     {
-      string leftpyramid = printf("#\n");
+     printf("#\n");
     }
 }
