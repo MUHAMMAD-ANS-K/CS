@@ -33,7 +33,7 @@ bool prime(int number)
     for(int j = 2; j < number; j++)
     {
        int r = number%j;
-       printf("%i\n",r);
+        
     }
     return false;
 }
