@@ -30,16 +30,18 @@ int main(void)
 
 bool prime(int number)
 {
-    for(int j = 2; j < number; j++)
-    {
-         if(number%j == 0)
+    if(number => 1)
     {
         return false;
     }
-    else
+    for(int j = 2; j < number; j++)
     {
+         if(number%j == 0)
+        {
+            return false;
+        }
+    }
         return true;
-    }
-    }
+
 
 }
