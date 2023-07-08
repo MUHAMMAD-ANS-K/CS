@@ -15,11 +15,11 @@ int main (void)
 
 
 
-void print_rightpyramid(int n)
+void print_rightpyramid(int height)
 {
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < height; i++)
     {
-       for(int j = n; j > i;j--)
+       for(int j = height; j > i;j--)
         {
             printf(" ");
         }
