@@ -8,5 +8,5 @@ int main(void)
     {
         h = get_int("Height of Pyramid: ");
     }
-    while (h > 9 && h < 1);
+    while (h > 9 || h < 1);
 }
