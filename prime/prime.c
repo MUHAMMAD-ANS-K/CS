@@ -31,11 +31,9 @@ int main(void)
 bool prime(int number)
 {
     int r;
-    int j = 2;
-    while(j < number)
+    for(j = 2; j < number; j++)
     {
-       r = number%j;
-       j++;
+        r = numbeer
     }
     if(r == 0)
     {
