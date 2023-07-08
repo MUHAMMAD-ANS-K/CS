@@ -30,10 +30,11 @@ int main(void)
 
 bool prime(int number)
 {
-    for(int j = 2; j < number; j++)
+    int j = 2;
+    while(j < number)
     {
        int r = number%j;
-       return r;
+       j++;
     }
     if(r == 0)
     {
