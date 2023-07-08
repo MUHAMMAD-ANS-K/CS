@@ -21,8 +21,8 @@ float half(float bill, float tax, int tip)
     bill = bill/2;
     tax = tax/2;
     tip = tip/2;
-    tax *= bill;
-    tip *= bill;
+    tax = (tax/100) * bill;
+    tip = (tip/100)*bill;
     printf("%f %f %i\n",bill,tax,tip);
     return 0.0;
 }
