@@ -11,9 +11,14 @@ int main(void)
     while (h > 8 || h < 2);
     for(int i = 0; i < h; i++)
     {
-        for(int j = 0;j <= i; j++)
+        for(int j = 0; j <= i; j++)
         {
-            printf("# ");
+            printf(" ");
+        }
+        printf("  ");
+        for(int k = 0;k <= i; k++)
+        {
+            printf("#");
         }
      printf(" \n");
     }
