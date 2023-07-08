@@ -33,7 +33,14 @@ bool prime(int number)
     for(int j = 2; j < number; j++)
     {
        int r = number%j;
-        
+       return r;
     }
-    return false;
+    if(r == 0)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
 }
