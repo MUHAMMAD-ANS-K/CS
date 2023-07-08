@@ -30,12 +30,12 @@ int main(void)
 
 bool prime(int number)
 {
+    int r;
     int j = 2;
     while(j < number)
     {
-       int r = number%j;
+       r = number%j;
        j++;
-       return r;
     }
     if(r == 0)
     {
