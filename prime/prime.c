@@ -42,6 +42,4 @@ bool prime(int number)
         }
     }
         return true;
-
-
 }
