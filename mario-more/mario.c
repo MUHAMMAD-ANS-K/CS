@@ -8,5 +8,11 @@ int main(void)
     {
         h = get_int("Height of Pyramid: ");
     }
-    while (h > 9 || h < 1);
+    while (h > 8 || h < 2);
+    for(int i = 0; i < h; i++)
+    {
+        printf(".i#\n");
+        printf("  \n");
+        printf("#\n");
+    }
 }
