@@ -40,7 +40,7 @@ void print_pyramid(int height)
 {
  for(int i = 0; i < height; i++)
     {
-        for(int j =height; j > i;j--)
+        for(int j =height - 1; j > i;j--)
         {
             printf(" ");
         }
@@ -53,6 +53,6 @@ void print_pyramid(int height)
         {
             printf("#");
         }
-     printf(" \n");
+     printf("\n");
     }
 }
