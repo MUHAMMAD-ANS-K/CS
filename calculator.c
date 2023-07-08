@@ -20,4 +20,4 @@ int main(void)
 
 
 // preprocessing compiling assembling linking
-// printf debugger
+// printf debugger rubber duck
