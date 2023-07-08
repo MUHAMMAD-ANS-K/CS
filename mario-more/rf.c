@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
-void print_rightpyramid(int n);
+void print_rightpyramid(int height);
 
 int main (void)
 {
