@@ -6,10 +6,10 @@ int main(void)
 {
     string s = get_string("Name: ");
     int n = 0;
-    while(s != '\0')
+    while(s[n] != '\0')
     {
         n++;
     }
-    
+// can be done by using strlen;
     printf("%i\n", n);
 }
