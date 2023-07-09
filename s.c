@@ -5,6 +5,6 @@
 int main(void)
 {
     string s = get_string("Name: ");
-
-    printf("%lu\n", strlen(s));
+    int n = strlen(s);
+    printf("%i\n", n);
 }
