@@ -10,6 +10,6 @@ int main(void)
     {
         n++;
     }
-// can be done by using strlen;
+// can be done by using strlen
     printf("%i\n", n);
 }
