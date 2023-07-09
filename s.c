@@ -5,5 +5,6 @@
 int main(void)
 {
     string s = get_string("Name: ");
-    printf("%i\n", sterlin(s));
+    int n = sterlin(s);
+    printf("%i\n", n);
 }
