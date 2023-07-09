@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
 int main(void)
 {
@@ -21,4 +22,5 @@ int main(void)
             printf("%c", s[i]);
         }
     }printf("\n");
+    printf("Also:");
 }
