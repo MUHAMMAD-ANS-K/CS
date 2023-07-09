@@ -3,18 +3,20 @@
 
 int main(void)
 {
+    int n;
     do
     {
-        int n = get_int("Size of Array: ");
+        n = get_int("Size of Array: ");
     }
+    while(n < 1);
 
     int array[n];
     array[0] = 1;
+    printf("%i\n", array[0]);
     for (int i = 1; i < n; i++)
     {
         array[i] = array[i - 1]* 2;
-        printf("%i\n", array[i - 1]);
+        printf("%i\n", array[i]);
     }
-
 
 }
