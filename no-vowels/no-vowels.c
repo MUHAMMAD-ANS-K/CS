@@ -11,12 +11,12 @@ int main(int argc, string argv[])
     }
     else
     {
-        printf("%s\n",replace(argv))
+        printf("%s\n",replace(argv));
     }
 }
 string replace(string s[1])
 {
-    switch(s[1])
+    switch(string s[1])
     {
         case a:
         printf("6");
