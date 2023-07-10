@@ -1,12 +1,12 @@
 // Check that a password has at least one lowercase letter, uppercase letter, number and symbol
 #include <cs50.h>
 #include <stdio.h>
-
-bool valid(string password);
+#include <ctype.h>
+bool valid(char password);
 
 int main(void)
 {
-    string password = get_string("Enter your password: ");
+    char password = get_char("Enter your password: ");
     if (valid(password))
     {
         printf("Your password is valid!\n");
@@ -18,8 +18,12 @@ int main(void)
 }
 
 // TODO: Complete the Boolean function below
-bool valid(string password)
+bool valid(char password)
 {
-    if()
+    if(isalnum(password))
+    {
+
+    }return true;
+    if(isalpha())
     return false;
 }
