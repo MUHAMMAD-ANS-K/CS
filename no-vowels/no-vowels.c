@@ -8,5 +8,8 @@
 
 int main(int argc, string argv[])
 {
-    if("")
+    if(argc == 1)
+    {
+        printf("Fuck You\n");
+    }
 }
