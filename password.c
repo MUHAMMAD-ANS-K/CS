@@ -22,15 +22,8 @@ bool valid(string password)
 {
     for(i = 0; i < strlen(password); i++)
     {
-        password[i] = 
+        password[i];
     }
-    if(ispunct(password) && islower(password) && isupper(&&&&)
-    {
-        return true;
-    }
-    if(isalpha(password))
-    {
 
-    }
     return false;
 }
