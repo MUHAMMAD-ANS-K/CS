@@ -24,7 +24,10 @@ bool valid(string password)
 {
     for(int i = 0; i < strlen(password); i++)
     {
-        ispunct(password[i]);
+       if(ispunct(password[i]))
+       {
+        return true;
+       }
     }
 
     return false;
