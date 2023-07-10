@@ -17,28 +17,29 @@ int main(int argc, string argv[])
 }
 string replace(string s)
 {
-    string n;
+    string n = s
     for(i = 1;i < strlen(s); i++)
     {
-        n = tolower(s)
-    }
-    switch(s[1])
+     char c = tolower(s);
+    switch(c)
     {
         case 'a':
-        printf("6");
+        n[i]= '6';
         break;
         case 'i':
-        printf("1");
+        n[i] = '1';
         break;
         case 'e':
-        printf("3");
+        n[i] = '3';
         break;
         case 'o':
-        printf("0");
+        n[i] = '0';
         break;
         default:
-        printf("%s", s[1]);
+        n[i] = c;
         break;
     }
-    return s[1];
+    }
+
+    return n;
 }
