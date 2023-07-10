@@ -1,10 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
 string replace(string s);
 
 int main(int argc, string argv[])
 {
-    if(argc =! 2)
+    if(argc != 2)
     {
         printf("Fuck You\n");
         return 1;
@@ -17,8 +20,8 @@ int main(int argc, string argv[])
 }
 string replace(string s)
 {
-    string n = s
-    for(i = 1;i < strlen(s); i++)
+    string n = s;
+    for(int i = 1;i < strlen(s); i++)
     {
      char c = tolower(s);
     switch(c)
