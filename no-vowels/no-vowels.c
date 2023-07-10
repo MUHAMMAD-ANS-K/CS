@@ -16,7 +16,7 @@ int main(int argc, string argv[])
 }
 string replace(string s[1])
 {
-    switch(string s[1])
+    switch(s[1])
     {
         case a:
         printf("6");
