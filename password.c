@@ -20,7 +20,7 @@ int main(void)
 // TODO: Complete the Boolean function below
 bool valid(char password)
 {
-    if(isalnum(password))
+    if(ispunct(password))
     {
         return true;
     }
