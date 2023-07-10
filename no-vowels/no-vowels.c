@@ -23,7 +23,7 @@ string replace(string s)
     string n = s;
     for(int i = 1;i < strlen(s); i++)
     {
-     char c = tolower(s);
+     char c = tolower(s[i]);
     switch(c)
     {
         case 'a':
