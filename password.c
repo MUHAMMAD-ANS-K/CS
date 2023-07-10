@@ -20,7 +20,11 @@ int main(void)
 // TODO: Complete the Boolean function below
 bool valid(string password)
 {
-    if(ispunct(password))
+    for(i = 0; i < strlen(password); i++)
+    {
+        password[i] = 
+    }
+    if(ispunct(password) && islower(password) && isupper(&&&&)
     {
         return true;
     }
