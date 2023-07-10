@@ -24,7 +24,7 @@ bool valid(string password)
 {
     for(int i = 0; i < strlen(password); i++)
     {
-       if(ispunct(password[i]))
+       if(ispunct(password[i]) && islower(password[i]) && isupper(password[i]) && isdigit(password[i]))
        {
         return true;
        }
