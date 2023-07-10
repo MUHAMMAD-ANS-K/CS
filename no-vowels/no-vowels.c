@@ -19,5 +19,5 @@ int main(int argc, string argv[])
 
 string replace(string s[])
 {
-    
+    s[1]
 }
