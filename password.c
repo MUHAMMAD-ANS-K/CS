@@ -2,11 +2,11 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
-bool valid(char password);
+bool valid(string password);
 
 int main(void)
 {
-    char password = get_char("Enter your password: ");
+    string password = get_string("Enter your password: ");
     if (valid(password))
     {
         printf("Your password is valid!\n");
@@ -18,7 +18,7 @@ int main(void)
 }
 
 // TODO: Complete the Boolean function below
-bool valid(char password)
+bool valid(string password)
 {
     if(ispunct(password))
     {
