@@ -18,16 +18,18 @@ int main(void)
         printf("Your password needs at least one uppercase letter, lowercase letter, number and symbol\n");
     }
 }
-
+//islower(password[i]) && isupper(password[i]) && isdigit(password[i])
 // TODO: Complete the Boolean function below
 bool valid(string password)
 {
     for(int i = 0; i < strlen(password); i++)
     {
-       if(ispunct(password[i]) && islower(password[i]) && isupper(password[i]) && isdigit(password[i]))
+       if(ispunct(password[i]))
        {
-        return true;
        }
+       else if(islower(password[i]))
+       {
+       }return true;
     }
 
     return false;
