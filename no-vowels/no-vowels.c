@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-string replace(string s[]);
+string replace(string s[1]);
 
 int main(int argc, string argv[])
 {
@@ -14,13 +14,25 @@ int main(int argc, string argv[])
         printf("%s\n",replace(argv))
     }
 }
-
-
-
-string replace(string s[])
+string replace(string s[1])
 {
-    a = 6
-    e = 3
-    i = 1
-    o = 0
+    switch(s[1])
+    {
+        case a:
+        printf("6");
+        break;
+        case i:
+        printf("1");
+        break;
+        case e:
+        printf("3");
+        break;
+        case o:
+        printf("0");
+        break;
+        default:
+        printf("%s", s[1]);
+        break;
+    }
+    return s[1];
 }
