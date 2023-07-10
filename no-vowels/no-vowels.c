@@ -19,5 +19,8 @@ int main(int argc, string argv[])
 
 string replace(string s[])
 {
-    s[1]
+    a = 6
+    e = 3
+    i = 1
+    o = 0
 }
