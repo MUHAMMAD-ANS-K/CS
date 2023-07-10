@@ -2,6 +2,8 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
+
 bool valid(string password);
 
 int main(void)
@@ -20,9 +22,9 @@ int main(void)
 // TODO: Complete the Boolean function below
 bool valid(string password)
 {
-    for(i = 0; i < strlen(password); i++)
+    for(int i = 0; i < strlen(password); i++)
     {
-        password[i];
+        ispunct(password[i]);
     }
 
     return false;
