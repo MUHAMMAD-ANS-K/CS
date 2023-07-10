@@ -15,13 +15,14 @@ int main(int argc, string argv[])
     else
     {
         string words = argv[1];
-        printf("%s\n",replace(words));
+        string k = replace(words);
+        printf("%s\n",k);
     }
 }
 string replace(string s)
 {
     string n = s;
-    for(int i = 1;i < strlen(s); i++)
+    for(int i = 0;i < strlen(s); i++)
     {
      char c = tolower(s[i]);
     switch(c)
