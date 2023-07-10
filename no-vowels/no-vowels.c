@@ -16,18 +16,19 @@ int main(int argc, string argv[])
 }
 string replace(string s[1])
 {
-    switch(1)
+
+    switch(s[1])
     {
-        case a:
+        case 'a':
         printf("6");
         break;
-        case i:
+        case 'i':
         printf("1");
         break;
-        case e:
+        case 'e':
         printf("3");
         break;
-        case o:
+        case 'o':
         printf("0");
         break;
         default:
