@@ -31,10 +31,6 @@ bool valid(string password)
        {
         return true;
        }
-       if(islower(password[i]))
-       {
-        return true;
-       }
     }
     }
 
