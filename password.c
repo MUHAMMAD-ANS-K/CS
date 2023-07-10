@@ -19,6 +19,9 @@ int main(void)
     }
 }
 //islower(password[i]) && isupper(password[i]) && isdigit(password[i])
+//if(islower(password[i]))
+      // {
+       //}
 // TODO: Complete the Boolean function below
 bool valid(string password)
 {
@@ -28,10 +31,17 @@ bool valid(string password)
        {
         return true;
        }
-       else if(islower(password[i]))
+    else{
+    return false;}}
+        for(int i = 0; i < strlen(password); i++)
+    {
+       if(isdigit(password[i]))
        {
+        return true;
+       }
+       else{
+        return false;
        }
     }
-
     return false;
 }
