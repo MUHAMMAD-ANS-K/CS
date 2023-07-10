@@ -22,8 +22,11 @@ bool valid(char password)
 {
     if(isalnum(password))
     {
+        return true;
+    }
+    if(isalpha(password))
+    {
 
-    }return true;
-    if(isalpha())
+    }
     return false;
 }
