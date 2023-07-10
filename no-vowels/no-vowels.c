@@ -17,10 +17,10 @@ int main(int argc, string argv[])
 }
 string replace(string s)
 {
-    
+    string n;
     for(i = 1;i < strlen(s); i++)
     {
-
+        n = tolower(s)
     }
     switch(s[1])
     {
