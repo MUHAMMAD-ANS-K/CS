@@ -40,7 +40,7 @@ string replace(string s)
         n[i] = '0';
         break;
         default:
-        n[i] = c;
+        n[i] = s;
         break;
     }
     }
