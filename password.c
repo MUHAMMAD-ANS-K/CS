@@ -26,10 +26,11 @@ bool valid(string password)
     {
        if(ispunct(password[i]))
        {
+        return true;
        }
        else if(islower(password[i]))
        {
-       }return true;
+       }
     }
 
     return false;
