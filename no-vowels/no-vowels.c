@@ -1,22 +1,27 @@
 #include <cs50.h>
 #include <stdio.h>
-string replace(string s[1]);
+string replace(string s);
 
 int main(int argc, string argv[])
 {
-    if(argc == 1)
+    if(argc =! 2)
     {
         printf("Fuck You\n");
         return 1;
     }
     else
     {
-        printf("%s\n",replace(argv));
+        string words = argv[1];
+        printf("%s\n",replace(words));
     }
 }
-string replace(string s[1])
+string replace(string s)
 {
+    
+    for(i = 1;i < strlen(s); i++)
+    {
 
+    }
     switch(s[1])
     {
         case 'a':
