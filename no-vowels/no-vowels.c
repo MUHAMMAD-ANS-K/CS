@@ -11,5 +11,6 @@ int main(int argc, string argv[])
     if(argc == 1)
     {
         printf("Fuck You\n");
+        return 1;
     }
 }
