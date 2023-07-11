@@ -3,11 +3,12 @@
 #include <string.h>
 #include <ctype.h>
 int count_letters(string txt);
+int count_words(string txt);
 
 int main(void)
 {
     string text = get_string("Text: ");
-    printf("%i\n", count_letters(text));
+    printf("%i   %i\n", count_letters(text), count_words(text));
 }
 
 
@@ -27,8 +28,12 @@ int count_letters(string txt)
 int count_words(string txt)
 {
     int wrd = 0;
-    for(k = 0; k < strlen(txt); k++)
+    for(int k = 0; k < strlen(txt); k++)
     {
-        if(txt[k])
+        if(isspace(txt[k]))
+        {
+            wrd++;
+        }
     }
+    return wrd;
 }
