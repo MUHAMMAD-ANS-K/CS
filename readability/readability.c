@@ -10,6 +10,7 @@ int main(void)
 {
     string text = get_string("Text: ");
     printf("%i   %i   %i\n", count_letters(text), count_words(text), count_sentences(text));
+    float L = count_letters(text)/count_words(text) 
 }
 
 
@@ -18,7 +19,8 @@ int count_letters(string txt)
     int ltrs = 0;
     for(int i = 0; i < strlen(txt); i++)
     {
-        if(txt[i]){
+        if(isalnum(txt[i]))
+        {
             ltrs++;
         }
     }
@@ -44,7 +46,7 @@ int count_sentences(string txt)
     int sntns = 0;
     for(int j = 0; j < strlen(txt); j++)
     {
-        if(ispunct(txt[j]))
+        if(txt[j] == '!' || txt[j] == '.' || txt[j] == '?')
         {
             sntns++;
         }
