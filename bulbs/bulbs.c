@@ -10,15 +10,13 @@ void print_bulb(int bit);
 
 int main(void)
 {
-    int dividend[8];
     int bits[8];
     string text = get_string("Message: ");
     int number[strlen(text)];
     for(int i = 0; i < strlen(text); i++)
     {
         number[i] = text[i];
-        dividend[0] = number[i];
-        for(int j = 0; j < 8; j++)
+        for(int j = 7; j >= 0; j--)
         {
             bits[j] = number[i] % 2;
             number[i] = number[i] / 2;
