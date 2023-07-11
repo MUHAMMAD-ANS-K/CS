@@ -17,11 +17,12 @@ int main(void)
     for(int i = 0; i < strlen(text); i++)
     {
         number[i] = text[i];
+        dividend[0] = number[i];
         for(int j = 0; j < 8; j++)
         {
 
-            dividend[0] = number[i];
-            bits[j] = number[i] % 2;
+
+            bits[j] = dividend[i] % 2;
             printf("%i\n", bits[j]);
         }
     }
