@@ -18,13 +18,10 @@ int main(void)
     {
         number[i] = text[i];
         dividend[0] = number[i];
-        for(int k = 1; k < 8; k++)
-        {
-            dividend[k] = number[i] / 2;
-        }
         for(int j = 0; j < 8; j++)
         {
-            bits[j] = dividend[j] % 2;
+            bits[j] = number[i] % 2;
+            number[i] = number[i] / 2;
             printf("%i\n", bits[j]);
         }
     }
