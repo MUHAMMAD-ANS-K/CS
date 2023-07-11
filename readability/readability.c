@@ -22,3 +22,13 @@ int count_letters(string txt)
     }
     return ltrs;
 }
+
+
+int count_words(string txt)
+{
+    int wrd = 0;
+    for(k = 0; k < strlen(txt); k++)
+    {
+        if(txt[k])
+    }
+}
