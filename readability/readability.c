@@ -37,3 +37,16 @@ int count_words(string txt)
     }
     return wrd;
 }
+
+int count_sentences(string txt)
+{
+    int sntns = 0;
+    for(int j = 0; j < strlen(txt); j++)
+    {
+        if(ispunct(txt[j]))
+        {
+            sntns++;
+        }
+    }
+    return sntns;
+}
