@@ -21,16 +21,12 @@ int main(void)
 
         for(int j = 0; j < strlen(text); j++)
         {
-            bits[j] = number % 2;
+            bits[j] = number[i] % 2;
             printf("%i", bits[j]);
         }
         }
     }
     printf("%i\n", number[0]);
-    for(j = 0; j < strlen(text); j++)
-    {
-        bits[j] = number % 2;
-    }
 }
 
 void print_bulb(int bit)
