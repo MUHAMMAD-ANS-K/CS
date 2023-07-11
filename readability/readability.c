@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 int count_letters(string txt);
 
 int main(void)
@@ -12,6 +13,6 @@ int main(void)
 
 int count_letters(string txt)
 {
-    int ltrs = strlen(txt);
+    int ltrs = strlen(isalpha(txt));
     return ltrs;
 }
