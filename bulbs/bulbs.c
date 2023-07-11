@@ -16,13 +16,13 @@ int main(void)
     for(int i = 0; i < strlen(text); i++)
     {
         number[i] = text[i];
-        while(number[i] > 0)
+        if(number[i] > 0)
         {
 
         for(int j = 0; j < strlen(text); j++)
         {
             bits[j] = number[i] % 2;
-            printf("%i", bits[j]);
+            printf("%i\n", bits[j]);
         }
         }
     }
