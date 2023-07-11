@@ -10,7 +10,7 @@ int main(void)
 {
     string text = get_string("Text: ");
     printf("%i   %i   %i\n", count_letters(text), count_words(text), count_sentences(text));
-    float L = count_letters(text)/count_words(text) 
+    float L = count_letters(text)/count_words(text);
 }
 
 
