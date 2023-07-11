@@ -23,7 +23,7 @@ int main(void)
         }
         for(int k = 0; k < 8; k++)
         {
-            print_bulb(bits);
+            printf("%i",bits[k]);
         }
     }
     printf("\n");
