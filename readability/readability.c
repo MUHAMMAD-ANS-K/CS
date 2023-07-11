@@ -44,7 +44,7 @@ int count_letters(string txt)
 
 int count_words(string txt)
 {
-    int wrd = 1;
+    int wrd = 0;
     for(int k = 0; k < strlen(txt); k++)
     {
         if(isspace(txt[k]))
