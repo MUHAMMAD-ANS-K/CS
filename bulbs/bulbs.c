@@ -21,7 +21,7 @@ int main(void)
     printf("%i\n", number[0]);
     for(j = 0; j < strlen(text); j++)
     {
-        while(number[j] > 0)
+        while(number[i] > 0)
         {
             bits[j] = number
         }
