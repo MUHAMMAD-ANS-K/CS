@@ -21,7 +21,7 @@ int main(void)
             bits[j] = number[i] % 2;
             number[i] = number[i] / 2;
         }
-        void print_bulb(bits);
+        print_bulb(bits);
     }
 }
 
@@ -29,7 +29,7 @@ void print_bulb(int bit[BITS_IN_BYTE])
 {
     for(int i = 0; i < BITS_IN_BYTE; i++)
     {
-    if (bit == 0)
+    if (bit[i] == 0)
     {
         // Dark emoji
         printf("\U000026AB");
