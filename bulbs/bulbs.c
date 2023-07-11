@@ -16,15 +16,20 @@ int main(void)
     for(int i = 0; i < strlen(text); i++)
     {
         number[i] = text[i];
+        while(number[i] > 0)
+        {
 
+        for(int j = 0; j < strlen(text); j++)
+        {
+            bits[j] = number % 2;
+            printf("%i", bits[j]);
+        }
+        }
     }
     printf("%i\n", number[0]);
     for(j = 0; j < strlen(text); j++)
     {
-        while(number[i] > 0)
-        {
-            bits[j] = number
-        }
+        bits[j] = number % 2;
     }
 }
 
