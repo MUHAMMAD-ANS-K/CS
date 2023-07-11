@@ -22,10 +22,10 @@ int main(void)
         {
             bits[j] = number[i] % 2;
             number[i] = number[i] / 2;
-            printf("%i\n", bits[j]);
+            printf("%i", bits[j]);
         }
     }
-    printf("%i\n", number[0]);
+    printf("\n");
 }
 
 void print_bulb(int bit)
