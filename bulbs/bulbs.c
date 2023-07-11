@@ -18,6 +18,8 @@ int main(void)
         number[i] = text[i];
         for(int j = 0; j < 8; j++)
         {
+            int dividend[j];
+            dividend[0] = number[i];
             bits[j] = number[i] % 2;
             printf("%i\n", bits[j]);
         }
