@@ -39,8 +39,8 @@ void print_bulb(int bit[BITS_IN_BYTE])
         // Light emoji
         printf("\U0001F7E1");
     }
-    printf("\n");
     }
+    printf("\n");
 }
 
         //while(number[i] > 0)
