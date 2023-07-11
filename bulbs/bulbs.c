@@ -24,7 +24,7 @@ int main(void)
         }
         for(int j = 0; j < 8; j++)
         {
-            bits[j] = dividend[i] % 2;
+            bits[j] = dividend[j] % 2;
             printf("%i\n", bits[j]);
         }
     }
