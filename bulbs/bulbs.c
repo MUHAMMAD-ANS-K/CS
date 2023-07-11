@@ -16,7 +16,6 @@ int main(void)
     for(int i = 0; i < strlen(text); i++)
     {
         number[i] = text[i];
-
     }
     printf("%i\n", number[0]);
 
