@@ -18,7 +18,7 @@ int count_letters(string txt)
     int ltrs = 0;
     for(int i = 0; i < strlen(txt); i++)
     {
-        if(isalnum(txt[i])){
+        if(txt[i]){
             ltrs++;
         }
     }
