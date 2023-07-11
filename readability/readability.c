@@ -9,6 +9,7 @@ int count_sentences(string txt);
 int main(void)
 {
     string text = get_string("Text: ");
+    
     float L = (count_letters(text)/(float) count_words(text)) * 100;
     float S = (count_sentences(text)/(float) count_words(text)) * 100;
     int index = 0.0588 * L - 0.296 * S - 15.8;
@@ -33,7 +34,7 @@ int count_letters(string txt)
     int ltrs = 0;
     for(int i = 0; i < strlen(txt); i++)
     {
-        if(isalnum(txt[i]))
+        if(isalpha(txt[i]))
         {
             ltrs++;
         }
