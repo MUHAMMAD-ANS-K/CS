@@ -14,7 +14,7 @@ int main(void)
     int index = 0.0588 * L - 0.296 * S - 15.8;
     if(index < 1)
     {
-        printf("Before Grade 1");
+        printf("Before Grade 1\n");
     }
     else if(index < 16)
     {
@@ -22,7 +22,7 @@ int main(void)
     }
     else if(index >= 16)
     {
-        printf("Grade 16+");
+        printf("Grade 16+\n");
     }
 
 }
@@ -44,7 +44,7 @@ int count_letters(string txt)
 
 int count_words(string txt)
 {
-    int wrd = 0;
+    int wrd = 1;
     for(int k = 0; k < strlen(txt); k++)
     {
         if(isspace(txt[k]))
