@@ -21,6 +21,10 @@ int main(void)
             bits[j] = number[i] % 2;
             number[i] = number[i] / 2;
         }
+        for(int k = 0; k < 8; k++)
+        {
+            print_bulb(bits);
+        }
     }
     printf("\n");
 }
