@@ -18,8 +18,7 @@ int main(void)
         number[i] = text[i];
         if(number[i] > 0)
         {
-
-        for(int j = 0; j < strlen(text); j++)
+        for(int j = 0; j < 8; j++)
         {
             bits[j] = number[i] % 2;
             printf("%i\n", bits[j]);
