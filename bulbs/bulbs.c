@@ -16,9 +16,16 @@ int main(void)
     for(int i = 0; i < strlen(text); i++)
     {
         number[i] = text[i];
+
     }
     printf("%i\n", number[0]);
-
+    for(j = 0; j < strlen(text); j++)
+    {
+        while(number[j] > 0)
+        {
+            bits[j] = number
+        }
+    }
 }
 
 void print_bulb(int bit)
