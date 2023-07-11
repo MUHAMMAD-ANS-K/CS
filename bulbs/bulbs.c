@@ -21,16 +21,14 @@ int main(void)
             bits[j] = number[i] % 2;
             number[i] = number[i] / 2;
         }
-        for(int k = 0; k < 8; k++)
-        {
-            printf("%i",bits[k]);
-        }
+        void print_bulb(bits);
     }
-    printf("\n");
 }
 
-void print_bulb(int bit)
+void print_bulb(int bit[BITS_IN_BYTE])
 {
+    for(int i = 0; i < BITS_IN_BYTE; i++)
+    {
     if (bit == 0)
     {
         // Dark emoji
@@ -40,6 +38,8 @@ void print_bulb(int bit)
     {
         // Light emoji
         printf("\U0001F7E1");
+    }
+    printf("\n");
     }
 }
 
