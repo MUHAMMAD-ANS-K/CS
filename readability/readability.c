@@ -47,7 +47,7 @@ int count_words(string txt)
     int wrd = 1;
     for(int k = 0; k < strlen(txt); k++)
     {
-        if(isspace(txt[k]) || txt[k] == '!' || txt[k] == '.' || txt[k] == '?')
+        if(isblank(txt[k]) || txt[k] == '!' || txt[k] == '.' || txt[k] == '?')
         {
             wrd++;
         }
