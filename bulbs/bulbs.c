@@ -20,7 +20,6 @@ int main(void)
         {
             bits[j] = number[i] % 2;
             number[i] = number[i] / 2;
-            printf("%i", bits[j]);
         }
     }
     printf("\n");
