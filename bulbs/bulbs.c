@@ -10,6 +10,7 @@ void print_bulb(int bit);
 
 int main(void)
 {
+    int dividend[8];
     int bits[8];
     string text = get_string("Message: ");
     int number[strlen(text)];
@@ -18,7 +19,7 @@ int main(void)
         number[i] = text[i];
         for(int j = 0; j < 8; j++)
         {
-            int dividend[j];
+
             dividend[0] = number[i];
             bits[j] = number[i] % 2;
             printf("%i\n", bits[j]);
