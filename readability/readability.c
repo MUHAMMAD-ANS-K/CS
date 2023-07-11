@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
 int count_letters(string txt);
 int count_words(string txt);
 int count_sentences(string txt);
@@ -12,7 +13,8 @@ int main(void)
     printf("%i    %i    %i\n",count_letters(text),count_words(text), count_sentences(text));
     float L = (count_letters(text)/(float) count_words(text)) * 100;
     float S = (count_sentences(text)/(float) count_words(text)) * 100;
-    int index = 0.0588 * L - 0.296 * S - 15.8;
+    float ind = 0.0588 * L - 0.296 * S - 15.8;
+    int index = round(ind);
     if(index < 1)
     {
         printf("Before Grade 1\n");
