@@ -13,6 +13,6 @@ int main(void)
 
 int count_letters(string txt)
 {
-    int ltrs = strlen(isalpha(txt));
+    int ltrs =isalpha(txt);
     return ltrs;
 }
