@@ -34,7 +34,7 @@ void print_bulb(int bit[BITS_IN_BYTE])
         // Dark emoji
         printf("\U000026AB");
     }
-    else if (bit == 1)
+    else if (bit[i] == 1)
     {
         // Light emoji
         printf("\U0001F7E1");
