@@ -17,7 +17,7 @@ int main(void)
     people[1].name = "Carter";
     people[1].number = "+1-543-219-8765";
     string s = get_string("Name: ");
-    for(i = 0; i < n; i++)
+    for(int i = 0; i < n; i++)
     {
         if(strcmp(people[i].name , s) == 0)
         {
@@ -28,4 +28,5 @@ int main(void)
     {
         printf("Not Found");
     }
+    printf("\n");
 }
