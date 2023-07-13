@@ -22,6 +22,7 @@ int main(void)
         if(strcmp(people[i].name , s) == 0)
         {
             printf("Found: %s\n", people[i].number);
+            return 0;
         }
     }
     printf("Not Found\n");
