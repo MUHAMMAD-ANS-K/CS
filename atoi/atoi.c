@@ -26,5 +26,5 @@ int main(void)
 int convert(string input)
 {
     int n = strlen(input);
-    input[n] 
+    input[n]  = 
 }
