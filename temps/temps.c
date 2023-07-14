@@ -66,7 +66,7 @@ void sort_cities(void)
     {
         if(temps[i].temps < temps[i + 1].temp)
         {
-            
+            temps
 
         }
     }
