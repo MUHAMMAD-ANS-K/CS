@@ -26,6 +26,6 @@ int main(void)
 int convert(string input)
 {
     int n = strlen(input);
-    input[n]  -= 'c';
-    n--;
+    input[n]  -= '0';
+    return input[n];
 }
