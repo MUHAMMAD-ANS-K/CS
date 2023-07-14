@@ -27,5 +27,5 @@ int convert(string input)
 {
     int n = strlen(input);
     input[n]  -= 'c';
-    
+    n--;
 }
