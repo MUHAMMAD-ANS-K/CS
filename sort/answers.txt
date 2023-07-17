@@ -1,10 +1,11 @@
-sort1 uses: selection
+sort1 uses: bubble
     0.072
     0.042
 How do you know?: TODO
 
 sort2 uses: merge
     0.047
+    0.044
 How do you know?: TODO
 
 sort3 uses: merge
