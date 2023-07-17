@@ -82,7 +82,7 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    winner_elect
+    winner_elect()
     printf("%s\n", winner.name);
 }
 string winner_elect(void)
