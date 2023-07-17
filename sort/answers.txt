@@ -1,5 +1,6 @@
 sort1 uses: selection
     0.072
+    0.042
 How do you know?: TODO
 
 sort2 uses: merge
@@ -8,4 +9,5 @@ How do you know?: TODO
 
 sort3 uses: merge
 0.070
+0.087
 How do you know?: TODO
