@@ -66,10 +66,13 @@ void sort_cities(void)
     {
         if(temps[i].temp < temps[i + 1].temp)
         {
-            int position = i + 1;
-            temps[i] = temps[i ++];
-            temps[i + 1 - 1];
-
+            temps[i] = temps[i + 1];
+            temps[i + 1] = temps[i];
+        }
+        else
+        {
+            temps[i] = temps[i];
+            temps[i + 1] = temps[i + 1];
         }
     }
 }
