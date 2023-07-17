@@ -32,11 +32,11 @@ int max(int array[], int n)
     {
         if(max > array[i])
         {
-            max = array[i];
+            max += 0;
         }
-        else if(array[i] < max || array[i] == max)
+        else if(array[i] > max || array[i] == max)
         {
-            max = array[i + 1];
+            max = array[i];
         }
     }
     return max;
