@@ -34,8 +34,12 @@ int max(int array[], int n)
     {
         if(array[i] > array[i + 1])
         {
-            
+            max = array[i];
+        }
+        else if(array[i] < array[i + 1] || array[i] == array[i + 1])
+        {
+            max = array[i + 1];
         }
     }
-    return 0;
+    return max;
 }
