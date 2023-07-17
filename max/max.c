@@ -27,6 +27,7 @@ int main(void)
 // TODO: return the max value
 int max(int array[], int n)
 {
-    int n;
+    int max;
+    
     return 0;
 }
