@@ -1,14 +1,17 @@
 sort1 uses: bubble
     0.072
     0.042
-How do you know?: TODO
+    0.070
+How do you know?: When I ran sort1 on random5000, the result was 0.072s real. Similarly on reversed5000, it was 0.070 and in sorted it was 0.042. So, based upon these observations, I concluded that this program uses bubble sort.
 
 sort2 uses: merge
     0.047
     0.044
-How do you know?: TODO
+    0.048
+How do you know?: When I ran sort2 on random5000, the result was 0.047s real. Similarly on reversed5000, it was 0.048 and in sorted it was 0.044. So, based upon these observations, I concluded that this program uses merge sort.
 
-sort3 uses: merge
+sort3 uses: selection
 0.070
 0.087
-How do you know?: TODO
+0.072
+How do you know?:  When I ran sort3 on random5000, the result was 0.070s real. Similarly on reversed5000, it was 0.072 and in sorted it was 0.042. So, based upon these observations, I concluded that this program uses selection sort.
