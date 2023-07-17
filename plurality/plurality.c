@@ -67,7 +67,14 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-    if(strcmp())
+    for(i = 0; i < candidate_count; i++)
+    {
+    if(strcmp(name, candidates[i]) == 0)
+    {
+        return true;
+        
+    }
+    }
     return false;
 }
 
