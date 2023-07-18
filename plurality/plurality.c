@@ -22,7 +22,6 @@ int candidate_count;
 // Function prototypes
 bool vote(string name);
 void print_winner(void);
-string winner(void);
 
 int main(int argc, string argv[])
 {
@@ -68,13 +67,13 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-    for(int i = 0; i < candidate_count; i++)
+    for (int j = 0; j < candidate_count; j++)
     {
-    if(strcmp(name, candidates[i].name) == 0)
-    {
-        return true;
-        candidates[i].votes++;
-    }
+        if (strcmp(name, candidates[j].name) == 0)
+        {
+            candidates[j].votes ++;
+            return true;
+        }
     }
     return false;
 }
@@ -82,26 +81,21 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    candidate winner;
-    for(int k = 0; k < candidate_count; k++)
+    int max_votes = candidates[0].votes;
+    for (int k = 1; k < candidate_count; k++)
     {
-        if(candidates[k].votes > candidates[k + 1].votes)
+        if (candidates[k].votes > max_votes)
         {
-            winner = candidates[k];
-        }
-        else if(candidates[k].votes < candidates[k + 1].votes)
-        {
-            winner = candidates[k + 1];
-        }
-        else if(candidates[k].votes == candidates[k + 1].votes)
-        {
-            
+            max_votes = candidates[k].votes;
         }
     }
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes == max_votes)
+        {
+            printf("%s\n", candidates[i].name);
+        }
 
-    printf("%s\n", winner.name);
-}
-string winner_elect(void)
-{
+    }
 
 }
