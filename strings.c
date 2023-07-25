@@ -8,4 +8,6 @@ int main(void)
     scanf("%s", s);
     printf("%s\n",s);
     free(s);
+    int x = 90;
+    printf("%i\n", &x - 900);
 }
