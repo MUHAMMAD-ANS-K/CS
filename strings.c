@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    char *s = malloc(10);
+    char *s = malloc(10 * sizeof(char));
     printf("S: ");
     scanf("%s", s);
     printf("%s\n",s);
