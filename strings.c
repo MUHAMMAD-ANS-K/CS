@@ -9,5 +9,6 @@ int main(void)
     printf("%s\n",s);
     free(s);
     int x = 90;
-    printf("%i\n", &x - 900);
+    int *y = &x;
+    printf("%i\n", *(y));
 }
