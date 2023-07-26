@@ -10,7 +10,7 @@ int main(void)
     }
     printf("\n");
     fclose(ptr);
-    int s;
+    int s = -1;
     while(s < 0)
     {
     printf("S: ");
