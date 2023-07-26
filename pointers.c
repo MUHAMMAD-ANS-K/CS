@@ -10,5 +10,12 @@ int main(void)
     }
     printf("\n");
     fclose(ptr);
+    int s;
+    while(s < 0)
+    {
+    printf("S: ");
+    scanf("%i", &s);
+    printf("S is %i", s);
+    }
 
 }
