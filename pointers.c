@@ -2,11 +2,11 @@
 
 int main(void)
 {
-    FILE *ptr = fopen("sorted5000.txt", "r");
+    FILE *ptr = fopen("txt1.csv", "r");
 
-    int array_size = 5000;
+    int array_size = 10;
     int array[array_size];
-    fread(array, sizeof(int), 5000 , ptr);
+    fread(array, sizeof(int), 10 , ptr);
 
     for(int i = 0; i < array_size; i++)
     {
