@@ -22,12 +22,11 @@ int main(int argc , string argv[])
     fread(buffer ,1 ,4 ,file);
     for(int i = 0; i < sizeof_buffer; i++)
     {
-         printf("%i \n", buffer[i]);
-        if(buffer[i] != pdf_digits[i])
+         if(buffer[i] != pdf_digits[i])
         {
             printf("File is likely not a pdf one\n");
-            fclose(file);
-            return 0;
+             fclose(file);
+             return 0;
         }
     }
     printf("Looks like a pdf\n");
