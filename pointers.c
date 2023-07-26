@@ -6,8 +6,9 @@ int main(void)
     char c;
     while((c = fgetc(ptr))!= EOF)
     {
-    printf("%c\n",c);
+    printf("%c",c);
     }
+    printf("\n");
     fclose(ptr);
 
 }
