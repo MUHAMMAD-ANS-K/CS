@@ -10,5 +10,5 @@ int main(void)
     free(s);
     int x = 90;
     int *y = &x;
-    printf("%i\n", *(y));
+    printf("%i\n", *y);
 }
