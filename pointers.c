@@ -11,11 +11,11 @@ int main(void)
     printf("\n");
     fclose(ptr);
     int s = -1;
-    while(s < 0)
+    for(s < 0)
     {
     printf("S: ");
     scanf("%i", &s);
-    printf("S is %i", s);
     }
+    printf("S is %i\n", s);
 
 }
