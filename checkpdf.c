@@ -22,6 +22,7 @@ int main(int argc , string argv[])
     fread(buffer ,1 ,4 ,file);
     for(int i = 0; i < sizeof_buffer; i++)
     {
+         printf("%i \n", buffer[i]);
         if(buffer[i] != pdf_digits[i])
         {
             printf("File is likely not a pdf one\n");
