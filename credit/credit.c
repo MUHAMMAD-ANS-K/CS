@@ -54,6 +54,7 @@ int main(void)
     {
         printf("MASTERCARD\n");
     }
+    return 0;
 }
 
 int number_length(long number)
