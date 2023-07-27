@@ -33,6 +33,7 @@ int main(void)
         sum += num[x + 1];
         x -= 2;
     }
+    printf("%i    %i\n", sum , n_length);
     if (sum % 10 != 0)
     {
         printf("INVALID\n");
