@@ -17,6 +17,7 @@ int main(void)
     {
         num[i] = number % 10;
         number = (number - num[i])/10;
+        int x = 
     }
 
 
