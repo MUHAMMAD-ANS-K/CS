@@ -87,7 +87,7 @@ int main(int argc, string argv[])
    // {
         // Calculate votes given remaining candidates
         tabulate();
-        printf("%i\n",);
+        printf("%i\n",find_min());
         // Check if election has been won
      /*   bool won = print_winner();
         if (won)
