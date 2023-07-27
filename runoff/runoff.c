@@ -83,13 +83,13 @@ int main(int argc, string argv[])
     }
 
     // Keep holding runoffs until winner exists
-    while (true)
-    {
+ //  while (true)
+   // {
         // Calculate votes given remaining candidates
         tabulate();
         printf("%i     %i\n",candidates[0].votes, candidates[1].votes);
         // Check if election has been won
-        bool won = print_winner();
+     /*   bool won = print_winner();
         if (won)
         {
             break;
@@ -121,6 +121,7 @@ int main(int argc, string argv[])
             candidates[i].votes = 0;
         }
     }
+    */
     return 0;
 }
 
