@@ -88,7 +88,7 @@ int main(int argc, string argv[])
         // Calculate votes given remaining candidates
         tabulate();
         // Check if election has been won
-     /*   bool won = print_winner();
+        bool won = print_winner();
         if (won)
         {
             break;
@@ -120,7 +120,6 @@ int main(int argc, string argv[])
             candidates[i].votes = 0;
         }
     }
-    */
     return 0;
 }
 
