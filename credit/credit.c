@@ -38,16 +38,18 @@ int main(void)
         printf("INVALID\n");
         return 0;
     }
-    if(num[0] == 3 && num[1] == 4 || num[1] == 7)
+    if(n_length == 15 && num[0] == 3 && (num[1] == 4 || num[1] == 7))
     {
         printf("AMEX\n");
     }
-    else if(num[0] == 4)
+    else if((n_length == 16 || n_length == 13) && num[0] == 4)
     {
         printf("VISA\n");
     }
-    else if(num[0] == 5 && num[1] == )
-
+    else if(n_length == 16 && num[0] == 5 && (num[1] == 1 || num[1] == 2 || num[1] == 3 || num[1] == 4 || num[1] == 5))
+    {
+        printf("MASTERCARD\n");
+    }
 }
 
 
