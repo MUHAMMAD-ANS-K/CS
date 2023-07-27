@@ -30,9 +30,13 @@ int main(void)
             z = (z - y) / 10;
         }
         sum += z;
+        sum += num[x + 1];
         x -= 2;
     }
-    printf("%i    %i\n", sum , n_length);
+    if (n_length % 2 == 1)
+    {
+        sum += num[0];
+    }
     if (sum % 10 != 0)
     {
         printf("INVALID\n");
