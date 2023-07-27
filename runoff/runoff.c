@@ -87,7 +87,7 @@ int main(int argc, string argv[])
     {
         // Calculate votes given remaining candidates
         tabulate();
-        printf("%i\n",candidates[0].votes);
+        printf("%i     %i\n",candidates[0].votes, candidates[1].votes);
         // Check if election has been won
         bool won = print_winner();
         if (won)
@@ -143,14 +143,15 @@ void tabulate(void)
 {
     for(int i = 0; i < voter_count; i++)
     {
-        int j = 0;
+        int j = -1;
         do
         {
+            j++;
             if(candidates[preferences[i][j]].eliminated == false)
             {
                 candidates[preferences[i][j]].votes++;
             }
-            j++;
+
         }
         while(candidates[preferences[i][j]].eliminated == false);
     }
