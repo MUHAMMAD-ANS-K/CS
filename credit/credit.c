@@ -16,13 +16,23 @@ int main(void)
     {
         num[i] = number % 10;
         number = (number - num[i])/10;
-        printf("%i\n",num[i]);
     }
-
+    for(int j = 0 )
     int sum = 0;
     printf("%i\n", n_length);
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 int number_length(long number)
 {
