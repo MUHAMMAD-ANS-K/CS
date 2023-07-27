@@ -150,8 +150,8 @@ void tabulate(void)
                 candidates[preferences[j][i]].votes ++;
             }
         }
+    }
 }
-
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
