@@ -146,11 +146,7 @@ void tabulate(void)
         int j = 0;
         do
         {
-            while (j < candidate_count)
-            {
-                candidates[preferences[i][j]].votes ++;
-                j
-            }
+            candidates[preferences[i][j]].votes ++;
         }
         while(candidates[preferences[i][j]].eliminated == false);
     }
