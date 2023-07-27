@@ -87,7 +87,8 @@ int main(int argc, string argv[])
    // {
         // Calculate votes given remaining candidates
         tabulate();
-        printf("%i\n",find_min());
+        int min = find_min();
+        bool tie = is_tie(min);
         // Check if election has been won
      /*   bool won = print_winner();
         if (won)
@@ -199,7 +200,7 @@ int find_min(void)
 }
 
 // Return true if the election is tied between all candidates, false otherwise
-bool is_tie(int min)
+bool is_tie (int min)
 {
     for(int i = 0; i < candidate_count; i++)
     {
@@ -207,10 +208,12 @@ bool is_tie(int min)
         {
             if(candidates[i].votes != min)
             {
+                printf("NOT TIE\n");
                 return false;
             }
         }
     }
+    printf("TIE\n");
     return true;
 }
 
