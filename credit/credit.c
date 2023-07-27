@@ -46,7 +46,7 @@ int main(void)
     {
         printf("VISA\n");
     }
-    else if()
+    else if(num[0] == 5 && num[1] == )
 
 }
 
