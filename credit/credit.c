@@ -4,14 +4,9 @@
 int main(void)
 {
     long number = get_long("Number: ");
-    int num;
+    int num = number % 10;
+    number = number - 
     int sum = 0;
-    while(number > 0)
-    {
-        num = number % 10;
-        number = (number - num)/10;
-        sum += num*2;
-    }
     printf("%i\n", sum);
 
 }
