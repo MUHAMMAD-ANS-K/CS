@@ -5,7 +5,8 @@ int main(void)
 {
     long number = get_long("Number: ");
     int num = number % 10;
-    number = number - 
+    number = (number - num)/10;
+    
     int sum = 0;
     printf("%i\n", sum);
 
