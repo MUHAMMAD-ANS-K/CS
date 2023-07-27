@@ -30,7 +30,6 @@ int main(void)
             z = (z - y) / 10;
         }
         sum += z;
-        sum += num[x + 1];
         x -= 2;
     }
     printf("%i    %i\n", sum , n_length);
