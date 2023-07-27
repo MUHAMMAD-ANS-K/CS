@@ -17,7 +17,7 @@ int main(void)
         num[i] = number % 10;
         number = (number - num[i])/10;
     }
-    for(int j = 0 )
+    for(int j = n_length - 2;  )
     int sum = 0;
     printf("%i\n", n_length);
 
