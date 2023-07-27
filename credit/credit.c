@@ -9,7 +9,7 @@ int main(void)
     if (n_length < 13)
     {
         printf("INVALID\n");
-        return 1;
+        return 0;
     }
     int sum = 0;
     int num[n_length];
