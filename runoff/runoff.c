@@ -87,8 +87,6 @@ int main(int argc, string argv[])
    // {
         // Calculate votes given remaining candidates
         tabulate();
-        int min = find_min();
-        bool tie = is_tie(min);
         // Check if election has been won
      /*   bool won = print_winner();
         if (won)
