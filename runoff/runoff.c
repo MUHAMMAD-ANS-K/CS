@@ -153,7 +153,7 @@ void tabulate(void)
                 candidates[preferences[i][j]].votes++;
             }
         }
-        while(candidates[preferences[i][j]].eliminated == false);
+        while(candidates[preferences[i][j]].eliminated == true);
     }
 }
 // Print the winner of the election, if there is one
