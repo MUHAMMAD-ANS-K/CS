@@ -12,7 +12,7 @@ int main(void)
         return 1;
     }
     int num[n_length];
-    for(int i = 0; i < n_length; i++)
+    for(int i = n_length - 1; i >= 0 ; i--)
     {
         num[i] = number % 10;
         number = (number - num[i])/10;
