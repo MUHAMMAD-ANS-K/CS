@@ -5,11 +5,20 @@ int number_length(long number);
 int main(void)
 {
     long number = get_long("Number: ");
-    int num;
     int n_length = number_length(number);
+    if(n_length < 13)
+    {
+        printf("INVALID\n");
+        return 1;
+    }
+    int num[n_length];
+    for(int i = 0; i < n_length; i++)
+    {
+        num[i] = number % 10;
+        number = (number - num[i])/10;
+        printf("%i\n",num[i]);
+    }
 
-   // for(int )
-    //number = (number - num)/10;
     int sum = 0;
     printf("%i\n", n_length);
 
