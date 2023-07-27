@@ -4,7 +4,14 @@
 int main(void)
 {
     long number = get_long("Number: ");
-    int num = number % 10;
-    printf("%i\n", num);
+    int num;
+    int sum = 0;
+    while(num > 0)
+    {
+        num = number % 100;
+        (number - num)/10;
+        sum += num*2;
+    }
+    printf("%i\n", sum);
 
 }
