@@ -18,10 +18,15 @@ int main(void)
         num[i] = number % 10;
         number = (number - num[i])/10;
     }
+    int y;
     int x = n_length - 2;
     while(x >= 0)
     {
         sum += num[x] * 2;
+        if(num[x] * 2 > 9)
+        {
+           y =  num[x]
+        }
         x -= 2;
     }
 
