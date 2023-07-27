@@ -148,12 +148,12 @@ void tabulate(void)
         do
         {
             j++;
-            if(candidates[preferences[i][j]].eliminated == false)
+            if(!candidates[preferences[i][j]].eliminated)
             {
                 candidates[preferences[i][j]].votes++;
             }
         }
-        while(candidates[preferences[i][j]].eliminated == true);
+        while(candidates[preferences[i][j]].eliminated);
     }
 }
 // Print the winner of the election, if there is one
