@@ -80,7 +80,7 @@ int main(int argc, string argv[])
             }
         }
 
-        printf("\n");
+        printf("%i  %i\n",preferences[0][0], preferences[0][1]);
     }
 
     // Keep holding runoffs until winner exists
