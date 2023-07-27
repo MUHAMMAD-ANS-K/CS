@@ -22,11 +22,14 @@ int main(void)
     int x = n_length - 2;
     while(x >= 0)
     {
-        sum += num[x] * 2;
-        if(num[x] * 2 > 9)
+        int z = num[x] * 2;
+        if(z > 9)
         {
-           y =  num[x]
+           y =  z % 10;
+           sum+= y;
+           z = (z - y)/10;
         }
+        sum += z;
         x -= 2;
     }
 
