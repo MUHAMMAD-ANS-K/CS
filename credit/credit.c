@@ -33,8 +33,20 @@ int main(void)
         sum += num[x + 1];
         x -= 2;
     }
-
-    printf("%i\n", sum);
+    if(sum % 10 != 0)
+    {
+        printf("INVALID\n");
+        return 0;
+    }
+    if(num[0] == 3 && num[1] == 4 || num[1] == 7)
+    {
+        printf("AMEX\n");
+    }
+    else if(num[0] == 4)
+    {
+        printf("VISA\n");
+    }
+    else if()
 
 }
 
