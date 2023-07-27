@@ -11,14 +11,15 @@ int main(void)
         printf("INVALID\n");
         return 1;
     }
+    int sum = 0;
     int num[n_length];
     for(int i = n_length - 1; i >= 0 ; i--)
     {
         num[i] = number % 10;
         number = (number - num[i])/10;
     }
-    for(int j = n_length - 2;  )
-    int sum = 0;
+
+
     printf("%i\n", n_length);
 
 }
