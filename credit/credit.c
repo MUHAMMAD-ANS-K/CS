@@ -38,7 +38,7 @@ int main(void)
 int number_length(long number)
 {
     int count = 0;
-    while (number > 0)
+    while (number > 2)
     {
        number =  number/10;
         count += 1;
