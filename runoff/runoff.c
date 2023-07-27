@@ -163,6 +163,7 @@ bool print_winner(void)
     {
         if(candidates[i].votes > candidates[i + 1].votes)
         {
+            printf("%s\n", candidates[i].name)
             return true;
         }
     }
