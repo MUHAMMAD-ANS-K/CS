@@ -181,7 +181,7 @@ int find_min(void)
         j++;
         if(!candidates[j].eliminated)
         {
-            min = candidates[j].votes
+            min = candidates[j].votes;
         }
     }
     while(candidates[j].eliminated);
