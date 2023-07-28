@@ -23,9 +23,9 @@ int main(int argc, char *argv[])
         n -> next = list;
         list = n;
     }
-    for(node *ptr = list; ptr != NULL; ptr = ptr -> next)
+    for(node *ptr = list, node *tmp = ptr; ptr != NULL; tmp = ptr -> next, ptr = tmp)
     {
         printf("%i\n", ptr -> number);
-        free();
+        free(ptr);
     }
 }
