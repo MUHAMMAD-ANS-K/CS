@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     node *list = NULL;
     for(int i = 1; i < 4; i++)
     {
-        int number = argv[i];
+        int number = atoi(argv[i]);
         node *n = malloc(sizeof(node));
         if(n == NULL)
         {
@@ -23,5 +23,8 @@ int main(int argc, char *argv[])
         n -> next = list;
         list = n;
     }
-    printf("%i", );
+    for(node *ptr = list; ptr != NULL; ptr = list -> next)
+    {
+        printf("%i\n", list -> number);
+    }
 }
