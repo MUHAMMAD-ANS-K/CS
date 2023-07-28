@@ -25,6 +25,6 @@ int main(int argc, char *argv[])
     }
     for(node *ptr = list; ptr != NULL; ptr = list -> next)
     {
-        printf("%i\n", list -> number);
+        printf("%i\n", ptr -> number);
     }
 }
