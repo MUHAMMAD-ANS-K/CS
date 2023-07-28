@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
         n -> number = number;
         n -> next = NULL;
 
-        n = n -> next;
+        n -> next = list;
         list = n;
     }
     printf("%i", );
