@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
         n -> next = list;
         list = n;
     }
-    for(node *ptr = list; ptr != NULL; ptr = ptr -> next)
+    for(node *ptr = list , node *tmp = ptr; ptr != NULL; ptr = ptr -> next)
     {
         printf("%i\n", ptr -> number);
         free(ptr);
