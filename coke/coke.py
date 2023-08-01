@@ -3,7 +3,8 @@ def main():
     while(total_cents > 0):
         print(f'Amount Due: {total_cents}')
         s = get_input()
-        total_cents -= s
+        if s == 25 or s == 10 or s == 5:
+            total_cents -= s
         if(total_cents <= 0):
             print(f'Change Owed: {abs(total_cents)}')
 def get_input():
