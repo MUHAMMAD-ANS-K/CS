@@ -8,8 +8,10 @@ def main():
 
 def is_valid(s):
     if s[0].isalpha() and s[1].isalpha():
-        return True
-    #for char in s:
+        r_one = True
+    if 7 > len(s) > 2:
+        r_two = True
+        
 
 
 
