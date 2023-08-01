@@ -7,8 +7,10 @@ def main():
 
 
 def is_valid(s):
-    for char in s:
-        if i == ' ' or i = 
+    if s[0].isalpha() and s[1].isalpha():
+        return True
+    #for char in s:
+
 
 
 main()
