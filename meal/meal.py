@@ -11,7 +11,7 @@ def main():
 def convert(time):
     hours, minutes = time.split(':')
     minutes = float(minutes) / 60
-    hours = round(float(hours) + minutes, 1)
+    hours = round(float(hours) + minutes, 2)
     return hours
 
 
