@@ -1,6 +1,6 @@
 def main():
     filename = input('File: ')
-    if filename.isdecimal():
+    if filename.startswith('.', ):
         print('found')
 
 main()
