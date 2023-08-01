@@ -14,7 +14,7 @@ def is_valid(s):
 
     for i in range(len(s)):
         if s[i].isdecimal():
-            while i > len(s):
+            while int(i) > len(s):
                 if s[i].isalpha():
                     return False
                 i += 1
