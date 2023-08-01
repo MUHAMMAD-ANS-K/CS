@@ -1,5 +1,6 @@
 def main():
     input = input('Input: ')
-    for i in input:
+    output = input.lower()
+    for i in output:
         match i:
-            case
+            case a:
