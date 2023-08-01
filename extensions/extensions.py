@@ -12,7 +12,7 @@ def main():
     elif filename.endswith('.txt'):
         print('text/plain')
     elif filename.endswith('.zip'):
-        print('image/zip')
+        print('application/zip')
     else:
         print('application/octet-stream')
 
