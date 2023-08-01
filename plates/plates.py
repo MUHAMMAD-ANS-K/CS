@@ -13,8 +13,6 @@ def is_valid(s):
         return False
 
     for i in range(len(s)):
-        if s[i] == ' ' or s[i] == '.' or s[i] == ',' or s[i] == '!':
-            return False
         if s[i].isdecimal():
             if s[i] == '0':
                 return False
@@ -22,5 +20,8 @@ def is_valid(s):
                 if s[i].isalpha():
                     return False
                 i += 1
+    for k in range(len(s)):
+        if s[k] == ' ' or s[k] == '.' or s[k] == ',' or s[k] == '!':
+             return False
     return True
 main()
