@@ -5,4 +5,5 @@ di = [
        {'name': 'Draco Malfoy', 'house' : 'Slytherin' , 'patronus' : None}
 ]
 for student in di:
-    for name in student:
+    for i in student:
+        print(student[i])
