@@ -19,4 +19,6 @@ def is_valid(s):
                     r_three = false
                     break
                 i += 1
+    if r_one == True and r_two == True and r_three == True:
+        return True
 main()
