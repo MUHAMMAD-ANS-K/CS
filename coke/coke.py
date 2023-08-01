@@ -1,7 +1,10 @@
 def main():
     total_cents = 50
-    print(f'Amount Due: {total_cents}')
     while(total_cents > 0):
-        s = 
+        print(f'Amount Due: {total_cents}')
+        s = int(input('Insert Coin: '))
+        total_cents -= s
+        if(total_cents =< 0):
+            print(f'Change Owed: {abs(total_cents)}')
 
 main()
