@@ -3,8 +3,14 @@ def main():
     out = in_put.lower()
     j = 0
     for i in out:
-        if i != 'a' or i != 'e' or i != 'i' or i != 'o' or i != 'u':
-            print(in_put[j])
+        match i:
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case _ :
+                print(in_put[j],end = '')
         j += 1
-
+    print()
 main()
