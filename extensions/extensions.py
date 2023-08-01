@@ -1,8 +1,7 @@
 
 def main():
     filename = input('File: ')
-    from keyword import iskeyword
-    if filename.isidentifier(), iskeyword('.'):
+    if filename.:
         print('found')
 
 main()
