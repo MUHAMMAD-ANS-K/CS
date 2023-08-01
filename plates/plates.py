@@ -13,15 +13,16 @@ def is_valid(s):
         return False
 
     for i in range(len(s)):
-        if s[i] == '0':
+        if s[i] == ' ' or s[i] == '.' or s[i] == ',' or s[i] == '!':
             return False
         if s[i].isdecimal():
+            if s[i] == '0':
+                return False
             j = i + 1
             break
     while j < len(s):
         if s[j].isalpha():
             return False
         j += 1
-
     return True
 main()
