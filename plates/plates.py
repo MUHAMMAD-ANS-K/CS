@@ -8,7 +8,7 @@ def main():
 
 def is_valid(s):
     for char in s:
-        
+        if i == ' ' or i = 
 
 
 main()
