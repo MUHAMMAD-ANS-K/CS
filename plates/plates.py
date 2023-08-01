@@ -13,6 +13,8 @@ def is_valid(s):
         return False
 
     for i in range(len(s)):
+        if s[i] == '0':
+            return False
         if s[i].isdecimal():
             j = i + 1
             break
