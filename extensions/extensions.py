@@ -10,7 +10,7 @@ def main():
     elif filename.endswith('.pdf'):
         print('application/pdf')
     elif filename.endswith('.txt'):
-        print('image/txt')
+        print('text/plain')
     elif filename.endswith('.zip'):
         print('image/zip')
     else:
