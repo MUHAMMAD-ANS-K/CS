@@ -11,8 +11,9 @@ def is_valid(s):
         r_one = True
     if 7 > len(s) > 2:
         r_two = True
-    for i in s:
-        if is
+    for i in range():
+        if i.isdecimal():
+
 
 
 
