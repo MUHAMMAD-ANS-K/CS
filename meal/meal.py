@@ -4,9 +4,9 @@ def main():
 
 
 def convert(time):
-    hours, minutes = float(split(':'))
-    minutes = minutes / 60
-    hours = round(hours + minutes, 1)
+    hours, minutes = time.split(':')
+    minutes = float(minutes) / 60
+    hours = round(float(hours) + minutes, 1)
     return hours
 
 
