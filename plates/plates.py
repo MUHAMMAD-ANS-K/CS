@@ -14,10 +14,12 @@ def is_valid(s):
 
     for i in range(len(s)):
         if s[i].isdecimal():
-            j = i
-            while int(j) > len(s):
-                if s[j].isalpha():
-                    return False
-                j += 1
+            j = i + 1
+            break
+    while int(j) > len(s):
+        if s[j].isalpha():
+            return False
+        j += 1
+
     return True
 main()
