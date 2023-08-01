@@ -1,5 +1,6 @@
 def main():
-    t = convert(input('What time is it?'))
+    t = input('What time is it?')
+    t = convert(t)
     if 7.0 <= t <= 8.0:
         print('breakfast time')
     elif 12.0 <= t <= 13.0:
