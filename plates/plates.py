@@ -13,7 +13,7 @@ def is_valid(s):
         return False
 
     for i in range(len(s)):
-        if s[i].isdecimal():
+        if s[i].isdigit():
             while i > len(s):
                 if s[i].isalpha():
                     return False
