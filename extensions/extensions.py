@@ -1,6 +1,8 @@
+from keyword import iskeyword
 def main():
     filename = input('File: ')
-    if filename.startswith('.', 1 , ):
+
+    if filename.iskeyword('.'):
         print('found')
 
 main()
