@@ -7,10 +7,13 @@ def main():
 
 
 def is_valid(s):
-    if s[0].isalpha() and s[1].isalpha():
+    if 7 > len(s) > 1:
         r_one = True
-    if 7 > len(s) > 2:
+    else:
+        return False
+    if s[0].isalpha() and s[1].isalpha():
         r_two = True
+
     r_three = True
     for i in range(len(s)):
         if s[i].isdecimal():
