@@ -13,5 +13,6 @@ def is_valid(s):
         r_two = True
     for i in range(len(s)):
         if s[i].isdecimal():
-            while i 
+            while i > len(s):
+                if
 main()
