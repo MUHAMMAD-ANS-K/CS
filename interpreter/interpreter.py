@@ -7,4 +7,4 @@ elif y.startswith('-'):
 elif y.startswith('*'):
     print(float(x) * float(z))
 elif y.startswith('/'):
-    print(':.1f',float(x) / float(z))
+    print(f'{float(x) / float(z)}')
