@@ -4,11 +4,8 @@ def main():
     j = 0
     for i in out:
         match i:
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
+            case 'a' | 'e'| 'i' | 'o' | 'u':
+                None
             case _ :
                 print(in_put[j],end = '')
         j += 1
