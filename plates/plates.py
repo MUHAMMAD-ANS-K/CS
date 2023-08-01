@@ -11,8 +11,12 @@ def is_valid(s):
         r_one = True
     if 7 > len(s) > 2:
         r_two = True
+    r_three = True
     for i in range(len(s)):
         if s[i].isdecimal():
             while i > len(s):
-                if
+                if s[i].isalpha():
+                    r_three = false
+                    break
+                i += 1
 main()
