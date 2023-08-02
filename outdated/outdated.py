@@ -23,7 +23,7 @@ def main():
                 month,day,year = date.split(' ')
                 day = day.rstrip(',')
                 for i in range(len(months)):
-                    if month == months:
+                    if month == months[i]:
                         month = i + 1
                         break
             except ValueError:
