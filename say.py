@@ -1,5 +1,5 @@
 import emoji
 import sys
 
-
-print(sys.argv[1])
+x = input('Input: ')
+print('Output: :thumbsup:',language = 'alias')
