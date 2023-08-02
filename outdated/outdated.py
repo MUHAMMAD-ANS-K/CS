@@ -23,6 +23,6 @@ def main():
                 break
         except ValueError:
             pass
-    print(f'{month} {day} {year}')
+    print(f'{year}-{month}-{day}')
 
 main()
