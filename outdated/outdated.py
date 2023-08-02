@@ -25,6 +25,6 @@ def main():
                 break
         except ValueError:
             pass
-    print(f'{year}-{month:.1f}-{day}')
+    print(f'{year}-{month:02}-{day:02}')
 
 main()
