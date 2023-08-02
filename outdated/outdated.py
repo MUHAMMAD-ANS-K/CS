@@ -17,23 +17,20 @@ def main():
         try:
             date = input('Date: ').strip()
             month,day,year = date.split('/')
-            month = int(month)
-            day = int(day)
-            if month <= 12 and day <= 31:
-                print(f'{year}-{month:02}-{day:02}')
-                break
+            break
         except ValueError:
             try:
                 month,day,year = date.split(' ')
-                day = int(day.rstrip(','))
+                day = day.rstrip(',')
                 for i in range(len(months)):
                     if month == months:
                         month = i + 1
-                if int(month) <= 12 and day <= 31:
-                    print(f'{year}-{month:02}-{day:02}')
-                    break
+                        break
             except ValueError:
                 pass
-
+    month = int(month)
+    day = int(day)
+    if month <= 12 and day <= 31:
+    print(f'{year}-{month:02}-{day:02}')
 
 main()
