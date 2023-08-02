@@ -18,7 +18,7 @@ def main():
             month,day,year = input('Date: ').split('/')
             for i in range(len(months)):
                 if months[i] == month:
-                    month = i
+                    month = i + 1
             if int(month) <= 12 and int(day) <= 31:
                 break
         except ValueError:
