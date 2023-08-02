@@ -28,7 +28,7 @@ def main():
                 for i in range(len(months)):
                     if month == months:
                         month = int(i)
-                if month <= 12 and day <= 31:
+                if int(month) <= 12 and day <= 31:
                     print(f'{year}-{month:02}-{day:02}')
                     break
             except ValueError:
