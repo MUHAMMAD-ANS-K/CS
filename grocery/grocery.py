@@ -3,11 +3,11 @@ def main():
     while True:
         try:
             item = input().strip().upper()
-            items
+            items[key] = item
         except EOFError:
             pass
             return
-
+    print(items)
 
 
 
