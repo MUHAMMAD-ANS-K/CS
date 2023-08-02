@@ -25,7 +25,7 @@ def main():
         except ValueError:
             try:
                 month,day,year = date.split(' ')
-                day = day.rstrip(',')
+                day,j = day.split(',')
                 for i in range(len(months)):
                     if month == months[i]:
                         month = i + 1
