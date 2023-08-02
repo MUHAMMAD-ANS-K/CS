@@ -1,11 +1,12 @@
 def main():
     while True:
         try:
-            item = input().upper
+            for item in items:
+                item = input().upper
         except EOFError:
             pass
             return
-        
+
 
 
 
