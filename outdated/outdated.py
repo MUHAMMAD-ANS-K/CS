@@ -26,6 +26,7 @@ def main():
                     if month == months[i]:
                         month = i + 1
                         break
+                break
             except ValueError:
                 pass
     month = int(month)
