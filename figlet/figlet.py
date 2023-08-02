@@ -8,4 +8,4 @@ elif len(sys.argv) == 3:
 else:
     sys.exit('Invalid usage')
 
-print (renderText('render'))
+print ('render')
