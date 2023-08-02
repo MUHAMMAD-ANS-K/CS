@@ -24,7 +24,10 @@ def main():
         except ValueError:
             try:
                 month,day,year = input('Date: ').split(' ')
-                day = d
+                day = int(day.rstrip(','))
+                for i in range(len(months)):
+                    if month == months:
+                        month = int(i)
             pass
 
 
