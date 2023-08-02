@@ -1,3 +1,5 @@
+import cowsay
 import sys
 
-print('helo,' + argv[1])
+
+cowsay.trex('helo,' + sys.argv[1])
