@@ -1,9 +1,8 @@
 def main():
-    item = {}
     while True:
         try:
-            for i in range(5):
-                item[i] = input().upper
+            item = input().upper
+            items = 
         except EOFError:
             pass
             return
