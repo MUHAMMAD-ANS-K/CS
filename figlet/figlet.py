@@ -1,6 +1,7 @@
 from pyfiglet import Figlet
 import sys
 
+f
 if len(sys.argv) == 1:
     font = Figlet(font = 'slant')
 elif len(sys.argv) == 3:
@@ -8,4 +9,4 @@ elif len(sys.argv) == 3:
 else:
     sys.exit('Invalid usage')
 
-print ('render')
+print (font.renderText('render'))
