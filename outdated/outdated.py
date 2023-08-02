@@ -16,8 +16,8 @@ def main():
     while True:
         try:
             month,day,year = input('Date: ').split('/')
-            if month <= 12 and day <= 31 and 
-            break
+            if int(month) <= 12 and int(day) <= 31:
+                break
         except ValueError:
             pass
 
