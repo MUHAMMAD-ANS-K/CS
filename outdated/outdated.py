@@ -19,7 +19,7 @@ def main():
             for i in range(len(months)):
                 if months[i] == month:
                     month = i + 1
-            if int(month) <= 12 and int(day) <= 31:
+            if month <= 12 and day <= 31:
                 break
         except ValueError:
             pass
