@@ -15,7 +15,7 @@ def main():
         try:
          item = input('Item: ').lower().title()
          total += item_price[item]
-         print(f'Total: {total}')
+         print(f'Total: ${total: .2f}')
         except EOFError:
            print()
            return
