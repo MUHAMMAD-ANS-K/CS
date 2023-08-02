@@ -16,9 +16,6 @@ def main():
     while True:
         try:
             month,day,year = input('Date: ').split('/')
-            for i in range(len(months)):
-                if months[i] == month:
-                    month = i + 1
             month = int(month)
             day = int(day)
             if month <= 12 and day <= 31:
