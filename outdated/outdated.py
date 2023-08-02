@@ -15,7 +15,7 @@ def main():
     ]
     while True:
         try:
-            date = input('Date: ')
+            month,day,year = input('Date: ').split('/')
             break
         except ValueError:
             pass
