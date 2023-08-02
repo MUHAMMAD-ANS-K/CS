@@ -1,7 +1,7 @@
 from pyfiglet import Figlet
 import sys
 
-f
+font = font.getFonts
 if len(sys.argv) == 1:
     font = Figlet(font = 'slant')
 elif len(sys.argv) == 3:
