@@ -1,4 +1,4 @@
-import pyfiglet
+from pyfiglet import Figlet
 import sys
 
 if len(sys.argv) == 1:
@@ -8,4 +8,4 @@ elif len(sys.argv) == 3:
 else:
     sys.exit('Invalid usage')
 
-print (f.renderText('render'))
+print (renderText('render'))
