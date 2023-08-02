@@ -1,5 +1,5 @@
-import cowsay
+import emoji
 import sys
 
 
-cowsay.trex('helo,' + sys.argv[1])
+print(sys.argv[1])
