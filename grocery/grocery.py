@@ -1,4 +1,5 @@
 def main():
+    item = {}
     while True:
         try:
             for i in range(5):
