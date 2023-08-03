@@ -1,7 +1,8 @@
 def main():
-    greet = input("Greeting: ").casefold().strip()
+    greet = input("Greeting: ")
     print('$' + value(greet))
 def value(greeting):
+    greeting.casefold().strip()
     if greeting.startswith('hello'):
         return '0'
     elif greeting.startswith('h'):
