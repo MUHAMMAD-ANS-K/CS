@@ -9,8 +9,8 @@ def convert(fract):
             x,y = fract.split('/')
             x = int(x)
             y = int(y)
-        if x <= y:
-            return round((x / y) * 100)
+            if x <= y:
+                return round((x / y) * 100)
         except ValueError:
             fract = input('Fraction: ')
             pass
