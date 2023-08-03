@@ -3,11 +3,11 @@ import random
 def main():
     level = get_level('Level: ')
     for _ in range(10):
-        x = rand_int()
-        y = rand_int()
+        x = random.randint(1,10) * 10 ** level
+        y = random.randint(1,10) * 10 ** level
         total = x + y
-        print(f'{x} + {y} = ', end = '')
         for i in range(3):
+            print(f'{x} + {y} = ', end = '')
             try:
                 user_input = int(input())
             except ValueError:
@@ -25,6 +25,5 @@ def get_level(prompt):
         except ValueError:
             pass
 
-def rand_int():
-    return random.randint(1,10) * 10 ** level
+
 main()
