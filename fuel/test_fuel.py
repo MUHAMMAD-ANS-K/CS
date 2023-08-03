@@ -10,3 +10,6 @@ def test_convert():
         convert('3')
     with pytest.raises(ValueError):
         convert('cat')
+
+def test_gauge():
+    
