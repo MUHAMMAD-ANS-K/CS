@@ -10,7 +10,10 @@ def test_convert():
         convert('3')
     with pytest.raises(ValueError):
         convert('cat')
-
+    with pytest.raises(ValueError):
+        convert('')
+    with pytest.raises(ValueError):
+        convert('/')
 def test_gauge():
     assert gauge(75) == '75%'
     assert gauge(99) == 'F'
