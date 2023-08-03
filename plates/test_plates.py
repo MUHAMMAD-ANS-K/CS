@@ -13,4 +13,5 @@ def test_12alpha():
 def test_numbers():
     assert is_valid('CS50') == True
     assert is_valid('NE8O') == False
-    assert is_valid('')
+    assert is_valid('PI ') == False
+    assert is_valid('hi.,!') == False
