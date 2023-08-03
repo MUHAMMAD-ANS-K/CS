@@ -7,3 +7,6 @@ def test_cvowels():
 def test_wvowels():
     assert shorten('twttr') == 'twttr'
     assert shorten('#$@1') == '#$@1'
+def test_uvowels():
+    assert shorten('TWITTER') == 'TWTTER'
+    assert shorten('KAINAT') == 'KNT'
