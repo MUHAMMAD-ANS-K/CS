@@ -5,6 +5,7 @@ def main():
 
 def shorten(word):
     out = word.lower()
+    short = ''
     j = 0
     for i in out:
         match i:
