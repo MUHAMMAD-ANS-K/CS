@@ -5,7 +5,7 @@ def test_length():
     assert is_valid('HI') == True
     assert is_valid('yourname') == False
 def test_12alpha():
-    assert is_valid('12hi') == False
+    assert is_valid('12h8i') == False
     assert is_valid('HI0') == False
     assert is_valid('Ho2') == True
     assert is_valid('2HO') == False
