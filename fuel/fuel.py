@@ -17,10 +17,13 @@ def convert(fract):
             if x <= y:
                 return round((x / y) * 100)
         except ValueError:
+            fract = input('Fraction: ')
             pass
         except ZeroDivisionError:
+            fract = input('Fraction: ')
             pass
 
-
+def gauge(percentage):
+    
 
 main()
