@@ -22,4 +22,5 @@ def main():
             print(total)
     print(score)
 
-main()
+if __name__ == '__main__':
+    main()
