@@ -11,6 +11,6 @@ def main():
             print()
             break
     output = p.join(names)
-    print(output)
+    print('Adieu, adieu, to',output)
 if __name__ == '__main__':
     main()
