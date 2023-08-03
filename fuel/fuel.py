@@ -1,5 +1,6 @@
 def main():
-    fraction = get_fraction('Fraction: ')
+    fraction = input('Fraction: ')
+    fraction = convert(fraction)
     if fraction <= 1:
         print('E')
     elif fraction >= 99:
@@ -7,10 +8,10 @@ def main():
     else:
         print(f'{fraction}%')
 
-def get_fraction(prompt):
+def get_fraction(fract):
     while True:
         try:
-            x,y = input(prompt).split('/')
+            x,y = fract.split('/')
             x = int(x)
             y = int(y)
             if x <= y:
