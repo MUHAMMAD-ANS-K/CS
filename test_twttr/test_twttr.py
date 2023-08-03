@@ -1,4 +1,4 @@
-from twttr import shorten
+from twttr.twttr import shorten
 
 def test_cvowels():
     assert shorten('twitter') == 'twttr'
