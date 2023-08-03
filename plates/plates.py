@@ -22,6 +22,7 @@ def is_valid(s):
                 if s[i].isalpha():
                     return False
                 i += 1
+            return True
     return True
 
 
