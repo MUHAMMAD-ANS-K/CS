@@ -8,7 +8,7 @@ def main():
     else:
         print(f'{fraction}%')
 
-def get_fraction(fract):
+def convert(fract):
     while True:
         try:
             x,y = fract.split('/')
