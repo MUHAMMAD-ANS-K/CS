@@ -26,4 +26,5 @@ def gauge(percentage):
     else:
         return (f'{percentage}%')
 
-main()
+if __name__ == '__main__':
+    main()
