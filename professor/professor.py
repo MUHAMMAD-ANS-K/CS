@@ -1,7 +1,6 @@
 import random
-from prompt import get_level
 def main():
-    level = get_level()
+    level = get_level('Level: ')
     score = 0
     for _ in range(10):
         x = random.randint(1,9) * 10 ** (level - 1)
@@ -21,6 +20,15 @@ def main():
         if user_input != total:
             print(total)
     print(score)
+
+def get_level(prompt):
+    while True:
+        try:
+            n = int(input(prompt).strip())
+            if n == 1 or n == 2 or n == 3:
+                return n
+        except ValueError:
+            pass
 
 if __name__ == '__main__':
     main()
