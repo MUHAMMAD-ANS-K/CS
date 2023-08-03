@@ -12,4 +12,4 @@ def test_uvowels():
     assert shorten('ANS') == 'NS'
 
 def test_punct():
-    assert shorten(h)
+    assert shorten('hi,.') == 'h,.'
