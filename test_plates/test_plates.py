@@ -9,7 +9,7 @@ def test_12alpha():
     assert is_valid('HI0') == False
     assert is_valid('Ho2') == True
     assert is_valid('2HO') == False
-    assert is_valid('02') == False
+    assert is_valid('20') == False
     assert is_valid('HK') == True
 
 def test_numbers():

@@ -9,8 +9,8 @@ def main():
 def is_valid(s):
     if not (7 > len(s) > 1):
         return False
-    #if not (s[0].isalpha() and s[1].isalpha()):
-     #   return False
+    if not (s[0].isalpha() and s[1].isalpha()):
+        return False
     for k in range(len(s)):
         if s[k] == " " or s[k] == "." or s[k] == "," or s[k] == "!":
             return False
