@@ -18,6 +18,8 @@ def main():
             elif user_input == total:
                 score += 1
                 break
+        if user_input != total:
+            print(total)
     print(score)
 
 
