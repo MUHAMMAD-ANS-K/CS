@@ -1,7 +1,7 @@
 import random
 
 def main():
-    level = get_level('Level: ')
+    level = get_level('Level:')
     score = 0
     for _ in range(10):
         x = random.randint(1,9) * 10 ** (level - 1)
