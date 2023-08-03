@@ -1,6 +1,5 @@
 def main():
-    in_put = input('Input: ')
-    out = in_put.lower()
+
     j = 0
     for i in out:
         match i:
@@ -11,3 +10,15 @@ def main():
         j += 1
     print()
 main()
+
+def main():
+    in_put = input('Input: ')
+    out = in_put.lower()
+
+
+def shorten(word):
+    ...
+
+
+if __name__ == "__main__":
+    main()
