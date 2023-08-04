@@ -9,8 +9,8 @@ def main():
          #   sys.exit('Not a Python file')
         with open(file_name) as file:
             for line in file:
-                line = line.lstrip()
-                if line.startswith(' '):
+                #line = line.lstrip()
+                if line.isspace():
                     pass
                 else:
                     lines += 1
