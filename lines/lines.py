@@ -5,8 +5,11 @@ def main():
     with open(file_name) as file:
         for line in file:
             line = line.lstrip()
-            if line
+            if line.startswith(' '):
+                pass
+            else:
+                lines += 1
 
-print(lines)
+    print(lines)
 if __name__ == '__main__':
     main()
