@@ -12,6 +12,7 @@ def main():
             sys.exit('Not a CSV file')
         with open(file_name) as file:
             reader = csv.reader(file)
+            #for line in reader:
             print(tabulate(reader, tablefmt="outline"))
 
     except FileNotFoundError:
