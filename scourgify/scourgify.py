@@ -7,7 +7,8 @@ def main():
     try:
         file_read = sys.argv[1]
         file_write = sys.argv[2]
-        with open()
+        with open(file_read) as file1:
+            
     except FileNotFoundError:
         sys.exit(f'Could not read {argv[1]}')
 
