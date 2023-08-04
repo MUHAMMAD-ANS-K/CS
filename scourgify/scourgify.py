@@ -1,5 +1,7 @@
 import sys
 import csv
+
+
 def main():
     if len(sys.argv) > 3:
         sys.exit("Too many command-line arguments")
@@ -12,14 +14,16 @@ def main():
         with open(file_read) as file1:
             reader = csv.DictReader(file1)
             for dic in reader:
-                dic['name']
-                students.append(dic)
-        with open(file_write, 'w') as file2:
-                field_names = ['first','last','home']
-                writer = csv.DictWriter(file2, fieldnames = field_names)
-                writer.writeheader()
+                last, first = dic["name"].split(",")
+                students.append({"first": first, "last": last, "house": dic["house"]})
+        with open(file_write, "w") as file2:
+            field_names = ["first", "last", "house"]
+            writer = csv.DictWriter(file2, fieldnames=field_names)
+            writer.writeheader()
+            writer.writerows(students)
     except FileNotFoundError:
-        sys.exit(f'Could not read {sys.argv[1]}')
+        sys.exit(f"Could not read {sys.argv[1]}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
