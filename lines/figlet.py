@@ -3,7 +3,7 @@ import sys
 
 font = Figlet()
 font.getFonts()
-    #
+    
 if len(sys.argv) == 1:
     font.setFont(font = 'slant')
 elif len(sys.argv) == 3:
