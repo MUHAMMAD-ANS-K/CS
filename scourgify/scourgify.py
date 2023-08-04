@@ -16,7 +16,8 @@ def main():
         with open(file_write, 'r') as file2:
                 field_names = ['first','last','home']
                 writer = csv.DictWriter(file2, fieldnames= field_names)
-                writer.writeheader()
+                #writer.writeheader()
+                writer.writerow({'first': 'Kainat', 'last' : 'Ans' , 'home' : 'Elite'})
     except FileNotFoundError:
         sys.exit(f'Could not read {sys.argv[1]}')
 
