@@ -1,5 +1,9 @@
 import sys
 def main():
+    if len(sys.argv) > 2:
+        sys.exit('Too many command-line arguments')
+    name,type = sys.argv[1]
+
     lines = 0
     try:
         file_name = sys.argv[1]
@@ -11,9 +15,9 @@ def main():
                 else:
                     lines += 1
     except FileNotFoundError:
-        pass
+        sys.exit('File does not exist')
     except IndexError:
-        sys.exit('T')
+        sys.exit('Too few command-line arguments')
 
     print(lines)
 if __name__ == '__main__':
