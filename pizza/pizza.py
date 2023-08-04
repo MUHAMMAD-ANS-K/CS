@@ -11,8 +11,8 @@ def main():
         if not file_name.endswith('.csv'):
             sys.exit('Not a CSV file')
         with open(file_name) as file:
-            reader = csv.DictReader(file)
-            print(tabulate(reader, tablefmt="grid"))
+            reader = csv.reader(file)
+            print(tabulate(reader,headers = 'firstrow', tablefmt="grid"))
 
     except FileNotFoundError:
         sys.exit('File does not exist')
