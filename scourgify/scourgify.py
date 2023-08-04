@@ -13,12 +13,12 @@ def main():
             reader = csv.DictReader(file1)
             for dic in reader:
                 students.append(dic)
-        with open(file_write) as file2:
-            field_names = ['first','last','home']
-            writer = csv.DictWriter(file2, fieldnames= field_names)
-            writer.writeheader()
+        with open(file_write, 'r') as file2:
+                field_names = ['first','last','home']
+                writer = csv.DictWriter(file2, fieldnames= field_names)
+                writer.writeheader()
     except FileNotFoundError:
         sys.exit(f'Could not read {sys.argv[1]}')
 
-#if __name__ == '__main__':
-main()
+if __name__ == '__main__':
+    main()
