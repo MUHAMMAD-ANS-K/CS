@@ -19,10 +19,10 @@ def main():
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
     with open(file_write, "w") as file2:
-            field_names = ["first", "last", "house"]
-            writer = csv.DictWriter(file2, fieldnames=field_names)
-            writer.writeheader()
-            writer.writerows(students)
+        field_names = ["first", "last", "house"]
+        writer = csv.DictWriter(file2, fieldnames=field_names)
+        writer.writeheader()
+        writer.writerows(students)
 
 if __name__ == "__main__":
     main()
