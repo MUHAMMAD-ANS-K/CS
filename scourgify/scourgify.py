@@ -1,13 +1,13 @@
 import sys
 def main():
-    if len(sys.argv) > 2:
+    if len(sys.argv) > 3:
         sys.exit("Too many command-line arguments")
     elif len(sys.argv) == 1:
         sys.exit("Too few command-line arguments")
     try:
-
+        with open()
     except FileNotFoundError:
-        sys.exit('Could not read invalid_file.csv')
+        sys.exit(f'Could not read {argv[1]}')
 
 
 if __name__ == '__main__':
