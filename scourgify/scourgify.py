@@ -20,5 +20,5 @@ def main():
     except FileNotFoundError:
         sys.exit(f'Could not read {sys.argv[1]}')
 
-if __name__ == '__main__':
-    main()
+#if __name__ == '__main__':
+main()
