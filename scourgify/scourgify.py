@@ -11,12 +11,12 @@ def main():
         file_write = sys.argv[2]
         with open(file_read) as file1:
             reader = csv.DictReader(file1)
-            for row in reader:
-                
-
+            for dic in reader:
+                students.append(dic)
+        with open(file_write) as file2:
+            
     except FileNotFoundError:
         sys.exit(f'Could not read {sys.argv[1]}')
-
 
 if __name__ == '__main__':
     main()
