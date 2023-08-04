@@ -2,7 +2,6 @@ import sys
 import csv
 from tabulate import tabulate
 def main():
-    row = []
     if len(sys.argv) > 2:
         sys.exit('Too many command-line arguments')
     elif len(sys.argv) == 1:
@@ -13,8 +12,7 @@ def main():
             sys.exit('Not a CSV file')
         with open(file_name) as file:
             reader = csv.reader(file)
-            for line in reader:
-                print(line)
+            print(tabulate(reader, tablefmt="outline"))
 
     except FileNotFoundError:
         sys.exit('File does not exist')
