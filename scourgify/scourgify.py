@@ -14,7 +14,7 @@ def main():
         with open(file_read) as file1:
             reader = csv.DictReader(file1)
             for dic in reader:
-                last, first = dic["name"].split(",")
+                first, last = dic["name"].split(",")
                 students.append({"first": first, "last": last, "house": dic["house"]})
         with open(file_write, "w") as file2:
             field_names = ["first", "last", "house"]
