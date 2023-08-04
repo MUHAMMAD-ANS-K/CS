@@ -16,14 +16,13 @@ def main():
             for dic in reader:
                 last, first = dic["name"].split(",")
                 students.append({"first": first, "last": last, "house": dic["house"]})
-        with open(file_write, "w") as file2:
+    except FileNotFoundError:
+        sys.exit(f"Could not read {sys.argv[1]}")
+    with open(file_write, "w") as file2:
             field_names = ["first", "last", "house"]
             writer = csv.DictWriter(file2, fieldnames=field_names)
             writer.writeheader()
             writer.writerows(students)
-    except FileNotFoundError:
-        sys.exit(f"Could not read {sys.argv[1]}")
-
 
 if __name__ == "__main__":
     main()
