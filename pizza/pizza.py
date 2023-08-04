@@ -1,9 +1,17 @@
+import sys
 def main():
+    if len(sys.argv) > 2:
+        sys.exit('Too many command-line arguments')
+    elif len(sys.argv) == 1:
+        sys.exit('Too few command-line arguments')
     try:
-
-    except:
-
-
+        file_name = sys.argv[1]
+        if not file_name.endswith('.csv'):
+            sys.exit('Not a CSV file')
+        with open(file_name) as file:
+            
+    except FileNotFoundError:
+        sys.exit('File does not exist')
 
 if __name__ == '__main__':
     main()
