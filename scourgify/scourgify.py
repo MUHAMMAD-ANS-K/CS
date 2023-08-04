@@ -5,6 +5,8 @@ def main():
     elif len(sys.argv) == 1:
         sys.exit("Too few command-line arguments")
     try:
+        file_read = sys.argv[1]
+        file_write = sys.argv[2]
         with open()
     except FileNotFoundError:
         sys.exit(f'Could not read {argv[1]}')
