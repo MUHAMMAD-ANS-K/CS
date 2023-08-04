@@ -15,7 +15,7 @@ def main():
                 students.append(dic)
         with open(file_write, 'r') as file2:
                 field_names = ['first','last','home']
-                writer = csv.DictWriter(file2, fieldnames= field_names)
+                writer = csv.DictWriter(file2, fieldnames = field_names)
                 #writer.writeheader()
                 writer.writerow({'first': 'Kainat', 'last' : 'Ans' , 'home' : 'Elite'})
     except FileNotFoundError:
