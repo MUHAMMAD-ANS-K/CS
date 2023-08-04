@@ -11,9 +11,7 @@ def main():
             sys.exit("Not a Python file")
         with open(file_name) as file:
             for line in file:
-                if line.isspace():
-                    pass
-                elif line.lstrip().startswith("#"):
+                if line.isspace() or line.lstrip().startswith("#"):
                     pass
                 else:
                     lines += 1
