@@ -1,4 +1,5 @@
 import sys
+import csv
 def main():
     if len(sys.argv) > 3:
         sys.exit("Too many command-line arguments")
@@ -9,10 +10,12 @@ def main():
         file_read = sys.argv[1]
         file_write = sys.argv[2]
         with open(file_read) as file1:
-            
+            reader = csv.DictReader(file1)
+            for row in reader:
+                
 
     except FileNotFoundError:
-        sys.exit(f'Could not read {argv[1]}')
+        sys.exit(f'Could not read {sys.argv[1]}')
 
 
 if __name__ == '__main__':
