@@ -1,8 +1,8 @@
 import sys
 def main():
     lines = 0
-    file_name = figlet.py
-    with open(file_name) as file:
+    #file_name = sys.argv[1]
+    with open('figlet.py') as file:
         for line in file:
             #line = line.lstrip()
             if line.startswith(' '):
