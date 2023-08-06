@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    if
+    match = re.search(r'https?://(www\.)?youtube.com/embed',s)
 
 
 
