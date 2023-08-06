@@ -7,10 +7,10 @@ def main():
 
 
 def validate(ip):
-    if re.search(r'^[0-255]{1,3}\.[0-9]+\.[0-9]+\.[0-9]+$',ip):
-        return 'Valid'
+    if re.search(r'^[0-255]{1,3}\.[0-255]{1,3}\.[0-255]{1,3}\.[0-255]{1,3}$',ip):
+        return 'True'
     else:
-        return 'Invalid'
+        return 'False'
 
 
 
