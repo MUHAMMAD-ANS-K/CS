@@ -7,10 +7,10 @@ def main():
 
 
 def parse(s):
-    ...
+    if
 
 
-...
+
 
 
 if __name__ == "__main__":
