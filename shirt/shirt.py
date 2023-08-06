@@ -16,7 +16,7 @@ def main():
         if not(extension1 == extension2):
             sys.exit('Input and output have different extensions')
     except ValueError:
-        sys.exit()
+        sys.exit('Invalid output')
     except FileNotFoundError:
         sys.exit("Input does not exist")
     shirt = Image.open("shirt.png")
