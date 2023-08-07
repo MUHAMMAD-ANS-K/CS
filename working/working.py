@@ -24,7 +24,7 @@ def convert(s):
         hours_24s += 12
     if time2.group(3) == "P":
         hours_24e += 12
-    return f"{hours_24s:02d}{minutes_s} to {hours_24e}{minutes_e}"
+    return f"{hours_24s:02d}{minutes_s} to {hours_24e:02d}{minutes_e}"
 
 
 if __name__ == "__main__":
