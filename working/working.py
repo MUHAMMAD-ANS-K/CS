@@ -21,9 +21,9 @@ def convert(s):
     if minutes_e == None:
         minutes_e = ":00"
     if time1.group(3) == "P":
-        time_24as += 12
+        hours_24s += 12
     if time2.group(3) == "P":
-        time_24e += 12
+        hours_24e += 12
     return f"{hours_24s:02d}{minutes_s} to {hours_24e}{minutes_e}"
 
 
