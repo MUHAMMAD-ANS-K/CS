@@ -9,7 +9,9 @@ def main():
 def convert(s):
     try:
         start, end = s.split(' to ')
-        if start 
+        start = start.strip(':00')
+        end = end.strip(':00')
+        if start
     except ValueError:
 
 
