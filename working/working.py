@@ -20,10 +20,14 @@ def convert(s):
         minutes_s = ":00"
     if minutes_e == None:
         minutes_e = ":00"
-    if time1.group(3) == "P" and not(time1.group(1) == '12'):
+    if time1.group(3) == "P":
         hours_24s += 12
-    if time2.group(3) == "P" and not(time1.group(2) == '12'):
+    if time2.group(3) == "P":
         hours_24e += 12
+    if time1.group(1) == '12':
+        hours_24s -= 12
+    if time2.group(1) == '12':
+        hours_24e -= 12
     return f"{hours_24s:02d}{minutes_s} to {hours_24e:02d}{minutes_e}"
 
 
