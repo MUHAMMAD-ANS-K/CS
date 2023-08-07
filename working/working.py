@@ -7,26 +7,26 @@ def main():
 
 
 def convert(s):
-    start, end = s.strip().split(" to ")
-    time1 = re.search(r"^(1[0-2]|[0-9])(:[0-5][0-9])? ([AP])M$", start)
-    time2 = re.search(r"^(1[0-2]|[0-9])(:[0-5][0-9])? ([AP])M$", end)
-    if not (time1 and time2):
+    time = re.search(
+        r"^(1[0-2]|[0-9])(:[0-5][0-9])? ([AP])M to (1[0-2]|[0-9])(:[0-5][0-9])? ([AP])M$", s
+        )
+    if not (time):
         raise ValueError()
-    hours_24s = int(time1.group(1))
-    hours_24e = int(time2.group(1))
-    minutes_s = time1.group(2)
-    minutes_e = time2.group(2)
+    hours_24s = int(time.group(1))
+    hours_24e = int(time.group(4))
+    minutes_s = time.group(2)
+    minutes_e = time.group(5)
     if minutes_s == None:
         minutes_s = ":00"
     if minutes_e == None:
         minutes_e = ":00"
-    if time1.group(3) == "P":
+    if time.group(3) == "P":
         hours_24s += 12
-    if time2.group(3) == "P":
+    if time.group(6) == "P":
         hours_24e += 12
-    if time1.group(1) == '12':
+    if time.group(1) == '12':
         hours_24s -= 12
-    if time2.group(1) == '12':
+    if time.group(4) == '12':
         hours_24e -= 12
     return f"{hours_24s:02d}{minutes_s} to {hours_24e:02d}{minutes_e}"
 
