@@ -7,12 +7,12 @@ def main():
 
 
 def convert(s):
-    try:
-        start, end = s.split(' to ')
-        start = start.strip(':00')
-        end = end.strip(':00')
-        if start
-    except ValueError:
+    start, end = s.split(' to ')
+    s = re.search('(1[0-2]|0[0-9])',start)
+    if s:
+        return True
+    else:
+        return False
 
 
 
