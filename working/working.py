@@ -10,10 +10,9 @@ def convert(s):
     start, end = s.strip().split(' to ')
     time1 = re.search(r'^(1[0-2]|[0-9])(:[0-5][0-9])? ([AP])M$',start)
     time2 = re.search(r'^(1[0-2]|[0-9])(:[0-5][0-9])? ([AP])M$',end)
-    if time2:
-        return True
-    else:
-        return False
+    if time1 and time2:
+        with
+
 
 
 
