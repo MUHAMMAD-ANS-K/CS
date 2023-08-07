@@ -7,8 +7,8 @@ def main():
 
 
 def convert(s):
-    start, end = s.split(' to ')
-    s = re.search(r'^(1[0-2]|[0-9])(:[0-5][0-9])?$',start)
+    #start, end = s.split(' to ')
+    s = re.search(r'^(1[0-2]|[0-9])(:[0-5][0-9])? ([AP])M$',s)
     if s:
         return True
     else:
