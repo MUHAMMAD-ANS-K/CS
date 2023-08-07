@@ -18,7 +18,7 @@ def convert(s):
         time_24a += 12
     if time2.group(3) == 'P':
         time_24b += 12
-    return f'{time_24a:02d} to {time_24b}'
+    return f'{time_24a:02d}{time1.group(2)} to {time_24b}'
 
 
 ...
