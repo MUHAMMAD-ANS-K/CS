@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    um = re.findall(r'.*\bum\b.*',s)
+    um = re.findall(r'.*\b+um\b.*',s)
     return len(um)
 
 
