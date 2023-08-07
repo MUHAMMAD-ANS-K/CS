@@ -12,11 +12,13 @@ def convert(s):
     time2 = re.search(r'^(1[0-2]|[0-9])(:[0-5][0-9])? ([AP])M$',end)
     if not(time1 and time2):
         raise ValueError()
+    time_24a = int(time1.group(1))
+    time_24b = int(time2.group(1))
     if time1.group(3) == 'P':
-        time1.group(1) = int(time1.group(1)) + 12
+        time_24a += 12
     if time2.group(3) == 'P':
-        time2.group(1) = int(time2.group(1)) + 12
-    return f'{time1.group(1)} to {time2.group(1)}'
+        time_24b += 12
+    return f'{time_24a:02d} to {time_24b}'
 
 
 ...
