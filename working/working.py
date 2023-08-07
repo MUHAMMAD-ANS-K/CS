@@ -9,6 +9,7 @@ def main():
 def convert(s):
     try:
         start, end = s.split(' to ')
+        if start 
     except ValueError:
 
 
