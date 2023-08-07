@@ -1,5 +1,6 @@
-from validator_collection import validators
+from validator_collection import checkers
 
 email = input('Email: ')
-try:
-    email_true = validators
+email_true = checkers.is_email(email)
+if email_true:
+    print('Valid')
