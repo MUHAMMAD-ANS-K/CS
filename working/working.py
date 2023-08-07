@@ -8,7 +8,7 @@ def main():
 
 def convert(s):
     start, end = s.split(' to ')
-    s = re.search('(1[0-2]|0[0-9])',start)
+    s = re.search(r'(1[0-2]|0[0-9]){1}',start)
     if s:
         return True
     else:
