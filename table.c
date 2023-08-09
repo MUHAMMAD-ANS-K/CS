@@ -26,7 +26,6 @@ int main(void)
         int index = hashfunction(name);
         node *n = malloc(sizeof(node));
         n ->name = name;
-        free(name);
         n -> next = hashtable[index];
         hashtable[index] = n;
     }
