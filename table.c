@@ -26,7 +26,7 @@ int main(void)
         node *n = malloc(sizeof(node));
         n ->name = name;
         n -> next = hashtable[index];
-        n = hashtable[index];
+        hashtable[index] = n;
     }
     string name_find = NULL;
     printf("Find: ");
