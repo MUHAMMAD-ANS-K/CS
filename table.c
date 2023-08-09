@@ -28,6 +28,7 @@ int main(void)
         n ->name = name;
         n -> next = hashtable[index];
         hashtable[index] = n;
+        free(name);
     }
     string name_find = malloc(sizeof(string));
     if (name_find == NULL)
