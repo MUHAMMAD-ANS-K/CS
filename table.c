@@ -45,5 +45,12 @@ int main(void)
 
 int hashfunction(char *name)
 {
-    return toupper(name[0]) - 'A';
+    if (isupper(name[0]))
+    {
+        return name[0] - 'A';
+    }
+    else if (islower(name[0]))
+    {
+        return name[0] - 'a';
+    }
 }
