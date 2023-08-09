@@ -21,7 +21,6 @@ int main(void)
     for (int i = 0; i < 4; i++)
     {
         string name = get_string("Name: ");
-        printf("%s\n",name);
         int index = hashfunction(name);
         node *n = malloc(sizeof(node));
         n ->name = name;
