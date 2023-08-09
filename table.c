@@ -49,8 +49,5 @@ int hashfunction(char *name)
     {
         return name[0] - 'A';
     }
-    else if (islower(name[0]))
-    {
-        return name[0] - 'a';
-    }
+    return name[0] - 'a';
 }
