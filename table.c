@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-typedef char * string;
+#include <cs50.h>
 typedef struct node
 {
     string name;
@@ -20,9 +20,7 @@ int main(void)
     }
     for (int i = 0; i < 4; i++)
     {
-        string name = NULL;
-        printf("Name: ");
-        scanf("%s",name);
+        string name = get_string("Name: ");
         printf("%s\n",name);
         int index = hashfunction(name);
         node *n = malloc(sizeof(node));
