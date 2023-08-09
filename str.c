@@ -1,10 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <cs50.h>
+#include <string.h>
 int main(void)
 {
-    char *s = malloc(10 * sizeof(char));
-    printf("Name: ");
-    scanf("%s",s);
-    printf("%s",s);
-    free(s);
+    string a = get_string(": ");
+    string b = get_string(": ");
+    if (strcmp(a,b) == 0)
+    {
+        printf("Equal");
+    }
 }
