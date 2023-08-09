@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-#include <cs50.h>
+typedef char * string;
 typedef struct node
 {
     string name;
@@ -20,27 +20,44 @@ int main(void)
     }
     for (int i = 0; i < 4; i++)
     {
-        string name = get_string("Name: ");
+        string name = malloc(sizeof(string));
+        printf("Name: ");
+        scanf("%s",name);
         int index = hashfunction(name);
         node *n = malloc(sizeof(node));
         n ->name = name;
         n -> next = hashtable[index];
         hashtable[index] = n;
     }
-    string name_find = get_string("Find: ");
+    string name_find = malloc(sizeof(string));
+    if (name_find == NULL)
+    {
+        return 1;
+    }
+    printf("Find: ");
+    scanf("%s",name_find);
     int index = hashfunction(name_find);
     node *ptr = hashtable[index];
     while (ptr != NULL)
     {
-        if (strcmp(ptr ->name, name_find))
+        if (strcmp(ptr->name, name_find) == 0)
         {
             printf("Found\n");
-            return 0;
+            break;
         }
         ptr = ptr ->next;
     }
-    printf("Not Found");
-    return 1;
+    for(int i = 0; i < 26; i++)
+    {
+        ptr = hashtable[i];
+        while(ptr != NULL)
+        {
+            node *next = ptr -> next;
+            free(ptr);
+            ptr = next;
+        }
+    }
+
 }
 
 int hashfunction(char *name)
