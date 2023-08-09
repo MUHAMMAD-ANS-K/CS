@@ -20,7 +20,7 @@ int main(void)
     }
     for (int i = 0; i < 4; i++)
     {
-        string name;
+        string name = NULL;
         printf("Name: ");
         scanf("%s",name);
         printf("%s\n",name);
@@ -30,7 +30,7 @@ int main(void)
         n -> next = hashtable[index];
         n = hashtable[index];
     }
-    string name_find;
+    string name_find = NULL;
     printf("Find: ");
     scanf("%s",name_find);
     int index = hashfunction(name_find);
