@@ -28,9 +28,7 @@ int main(void)
         n -> next = hashtable[index];
         hashtable[index] = n;
     }
-    string name_find = NULL;
-    printf("Find: ");
-    scanf("%s",name_find);
+    string name_find = get_string("Find: ");
     int index = hashfunction(name_find);
     node *ptr = hashtable[index];
     while (ptr != NULL)
