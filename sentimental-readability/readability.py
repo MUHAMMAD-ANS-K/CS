@@ -9,7 +9,7 @@ for i in sentence:
         words += 1
     if i in ['!','.','?']:
         sentences += 1
-L = round((letters/words)) * 100
+L = round((letters/words),2) * 100
 S = round((sentences/words)) * 100
 index = 0.0588 * L - 0.296 * S - 15.8
-print(index)
+print(L)
