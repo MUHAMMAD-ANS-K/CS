@@ -6,8 +6,9 @@ def main():
 
     if not len(sys.argv) == 3:
         sys.exit("No Command line arguments provided")
-
-    # TODO: Read database file into a variable
+    csv_file = sys.argv[1]
+    with open(csv_file) as file:
+        read = csv.DictReader(file)
 
     # TODO: Read DNA sequence file into a variable
 
