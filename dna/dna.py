@@ -10,8 +10,8 @@ def main():
     csv_file = sys.argv[1]
     with open(csv_file) as file:
         read = csv.DictReader(file)
-    for line in read:
-        lis.append(line)
+        for line in read:
+            lis.append(line)
 
     # TODO: Read DNA sequence file into a variable
 
