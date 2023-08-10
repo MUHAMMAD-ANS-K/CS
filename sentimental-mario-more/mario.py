@@ -6,4 +6,4 @@ while True:
     except ValueError:
         pass
 for i in range(height):
-    print(" " * abs(i - height), '#' * (i + 1))
+    print(" " * abs(i - (height - 2)), '#' * (i + 1))
