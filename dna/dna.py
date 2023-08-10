@@ -9,6 +9,7 @@ def main():
     lis = list()
     csv_file = sys.argv[1]
     with open(csv_file) as file:
+        dna_test = file.readline()
         read = csv.DictReader(file)
         for line in read:
             lis.append(line)
@@ -17,15 +18,19 @@ def main():
         line = file.readline()
 
 
-    agatc = longest_match(line,"AGATC")
-    aatg = longest_match(line)
+    d1 = longest_match(line,"AGATC")
+    d2 = longest_match(line,'AATG')
+    d3 = longest_match(line,'TTTTTTCT')
+    d4 = longest_match(line,'TCTAG')
+    d5 = longest_match(line,'GATA')
+    d6 = longest_match(line,'TATC')
 
 
     # TODO: Find longest match of each STR in DNA sequence
 
     # TODO: Check database for matching profiles
 
-    #print(line)
+    print(dna_test)
 
 
 def longest_match(sequence, subsequence):
