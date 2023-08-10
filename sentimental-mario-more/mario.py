@@ -5,3 +5,5 @@ while True:
             break
     except ValueError:
         pass
+for i in range(height):
+    print
