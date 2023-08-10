@@ -18,6 +18,7 @@ def main():
         line = file.readline()
 
     dna_tests.remove('name')
+    for _ in range(len())
 
 
     # TODO: Find longest match of each STR in DNA sequence
