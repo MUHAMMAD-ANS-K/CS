@@ -15,7 +15,10 @@ def main():
 
     with open(sys.argv[2]) as file:
         line = file.readline()
-        print(longest_match(line,line))
+
+
+    agatc = longest_match(line,"AGATC")
+    aatg = longest_match(line)
 
 
     # TODO: Find longest match of each STR in DNA sequence
