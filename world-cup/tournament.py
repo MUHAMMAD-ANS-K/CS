@@ -16,7 +16,9 @@ def main():
 
     teams = []
     filename = sys.argv[1]
+    # Opening file given in command line argument.
     with open(filename) as file:
+        # Using DictReader to get the location of 
         reader = csv.DictReader(file)
         for row in reader:
             row['rating'] = int(row['rating'])
