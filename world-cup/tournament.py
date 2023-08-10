@@ -43,14 +43,14 @@ def simulate_game(team1, team2):
     #Simulate a game.
     rating1 = team1["rating"]
     rating2 = team2["rating"]
-    # Getting a probability to name winner beacause its a soccer match.
+    # Using probability and randomness to name winner beacause its a soccer match.
     probability = 1 / (1 + 10 ** ((rating2 - rating1) / 600))
     # Return True if team1 wins, False otherwise.
     return random.random() < probability
 
 
 def simulate_round(teams):
-    """Simulate a round. Return a list of winning teams."""
+    #Simulate a round. Return a list of winning teams.
     winners = []
 
     # Simulate games for all pairs of teams
