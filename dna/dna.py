@@ -3,8 +3,8 @@ import sys
 
 
 def main():
-    if not len(sys.argv) == 3:
-        sys.exit("No Command line arguments provided")
+    #if not len(sys.argv) == 3:
+     #   sys.exit("No Command line arguments provided")
     lis = list()
     csv_file = sys.argv[1]
     with open(csv_file) as file:
