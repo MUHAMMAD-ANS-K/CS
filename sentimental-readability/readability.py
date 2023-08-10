@@ -1,6 +1,6 @@
 sentence = input("Sentence: ")
 letters = 0
-words = 0
+words = 1
 sentences = 0
 for i in sentence:
     if i.isalpha():
@@ -9,5 +9,5 @@ for i in sentence:
         words += 1
     if i in ['!','.','?']:
         sentences += 1
-
-print(letters,words,sentences)
+index = 0.0588 * L - 0.296 * S - 15.8
+print(index)
