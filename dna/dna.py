@@ -6,9 +6,12 @@ def main():
 
     if not len(sys.argv) == 3:
         sys.exit("No Command line arguments provided")
+    lis = list()
     csv_file = sys.argv[1]
     with open(csv_file) as file:
         read = csv.DictReader(file)
+    for line in read:
+        lis.append(line)
 
     # TODO: Read DNA sequence file into a variable
 
@@ -16,7 +19,7 @@ def main():
 
     # TODO: Check database for matching profiles
 
-    return
+    print(lis)
 
 
 def longest_match(sequence, subsequence):
