@@ -3,6 +3,8 @@ import re
 number = input('Number: ')
 numbers = list()
 for i in number:
-    print(i)
+    numbers.append(int(i))
+
+
 
 
