@@ -13,8 +13,7 @@ for j in range(-2,range_stop,-2):
     else:
         sum += num
 for k in range(-1,range_stop,-2):
-    print(j,end = '')
- #   sum += numbers[j]
+    sum += numbers[k]
 
 print(sum)
 
