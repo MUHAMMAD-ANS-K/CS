@@ -6,7 +6,6 @@ def main():
 
     if not len(sys.argv) == 3:
         sys.exit("No Command line arguments provided")
-    dna_tests = list()
     lis = list()
     csv_file = sys.argv[1]
     with open(csv_file) as file:
@@ -18,8 +17,7 @@ def main():
     with open(sys.argv[2]) as file:
         line = file.readline()
 
-    dna_tests = dna_tests.remove('name')
-
+    dna_tests.remove('name')
 
 
     # TODO: Find longest match of each STR in DNA sequence
