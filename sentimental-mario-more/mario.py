@@ -5,5 +5,5 @@ while True:
             break
     except ValueError:
         pass
-for i in range(height):
-    print(" " * (height - (i + 1)), '#' * (i + 1),sep = '')
+for i in range(1,height + 1):
+    print(" " * (height - i), '#' * i,sep = '')
