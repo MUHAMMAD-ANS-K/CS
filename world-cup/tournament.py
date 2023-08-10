@@ -24,9 +24,16 @@ def main():
     print(simulate_tournament(teams))
 
     counts = {}
-    # TODO: Simulate N tournaments and keep track of win counts
+    # Simulate n tournaments and record each team wins in counts dictionary.
     for _ in range(N):
-        
+        #Simulate tourament function to get winner
+        winner = simulate_tournament(teams)
+        #Check if winning team is already in the dictionary.If not adding it.
+        if not(winner in counts):
+            counts[winner] = 1
+        #If team already in the dictionary. Increment its wins.
+        else:
+            counts[winner] += 1
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
         print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
@@ -55,9 +62,12 @@ def simulate_round(teams):
 
 
 def simulate_tournament(teams):
+    # Starting a forever loop.
     while True:
         teams = simulate_round(teams)
+        #Checking if only one team left.
         if len(teams) == 1:
+# As teams is a list of dictionaries. Two square brackets.One for getting the individual dictionary and the other for getting team's name.
             return teams[0]['team']
 
 
