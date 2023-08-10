@@ -13,4 +13,11 @@ for j in range(-2, range_stop, -2):
 for k in range(-1, range_stop, -2):
     sum += numbers[k]
 
+
+
 print(sum)
+
+
+
+def card(list_num):
+    if 
