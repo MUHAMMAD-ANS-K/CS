@@ -1,5 +1,3 @@
-# Simulate a sports tournament
-
 import csv
 import sys
 import random
@@ -9,7 +7,6 @@ N = 1000
 
 
 def main():
-
     # Ensure correct usage
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
@@ -18,22 +15,23 @@ def main():
     filename = sys.argv[1]
     # Opening file given in command line argument.
     with open(filename) as file:
-        # Using DictReader to get the location of 
+        # Using DictReader to get the data in csv file as a list of dictionaries.
         reader = csv.DictReader(file)
         for row in reader:
-            row['rating'] = int(row['rating'])
+            # Converting rating of each team from string to integer form so it can be processed easily.
+            row["rating"] = int(row["rating"])
+            # Storing the whole data from csv in teams(as a list of dictionaries)
             teams.append(row)
-    print(simulate_tournament(teams))
 
     counts = {}
     # Simulate n tournaments and record each team wins in counts dictionary.
     for _ in range(N):
-        #Simulate tourament function to get winner
+        # Simulate tourament function to get winner
         winner = simulate_tournament(teams)
-        #Check if winning team is already in the dictionary.If not adding it.
-        if not(winner in counts):
+        # Check if winning team is already in the dictionary.If not adding it.
+        if not (winner in counts):
             counts[winner] = 1
-        #If team already in the dictionary. Increment its wins.
+        # If team already in the dictionary. Increment its wins.
         else:
             counts[winner] += 1
     # Print each team's chances of winning, according to simulation
@@ -67,11 +65,11 @@ def simulate_tournament(teams):
     # Starting a forever loop.
     while True:
         teams = simulate_round(teams)
-        #Checking if only one team left.
+        # Checking if only one team left.
         if len(teams) == 1:
-# As teams is a list of dictionaries. Two square brackets.One for getting the individual dictionary and the other for getting team's name.
-            return teams[0]['team']
-
+            ''' As teams is a list of dictionaries.
+              Two square brackets.One for getting the individual dictionary and the other for getting team's name.'''
+            return teams[0]["team"]
 
 
 if __name__ == "__main__":
