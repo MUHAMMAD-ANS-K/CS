@@ -14,7 +14,7 @@ def main():
             lis.append(line)
 
     with open(sys.argv[2]) as file:
-        
+        line = readline()
 
     # TODO: Find longest match of each STR in DNA sequence
 
