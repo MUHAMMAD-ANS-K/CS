@@ -10,7 +10,8 @@ Times:
 Questions:
 
 Which predictions, if any, proved incorrect as you increased the number of simulations?:
-
+Well, the results were almost the same but with the increase in simulations, Japan and Russia also
+got a chance to win. Although, their probability was 0.0%.
 
 Suppose you're charged a fee for each second of compute time your program uses.
 After how many simulations would you call the predictions "good enough"?:
