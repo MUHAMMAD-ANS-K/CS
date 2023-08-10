@@ -66,5 +66,6 @@ def longest_match(sequence, subsequence):
     # After checking for runs at each character in seqeuence, return longest run found
     return longest_run
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
