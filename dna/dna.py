@@ -4,7 +4,8 @@ import sys
 
 def main():
 
-    if len(sys.argv) 
+    if not len(sys.argv) == 3:
+        sys.exit("No Command line arguments provided")
 
     # TODO: Read database file into a variable
 
