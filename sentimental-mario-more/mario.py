@@ -6,4 +6,4 @@ while True:
     except ValueError:
         pass
 for i in range(height):
-    print(" " * (height - (i + 1)), '#' * (i + 1))
+    print(" " * (height - (i + 1)), '#' * (i + 1),sep = '')
