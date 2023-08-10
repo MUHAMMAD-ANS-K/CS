@@ -15,14 +15,14 @@ def main():
 
     with open(sys.argv[2]) as file:
         line = file.readline()
-        len_line = len(line)
+        print(longest_match(line,line))
 
 
     # TODO: Find longest match of each STR in DNA sequence
 
     # TODO: Check database for matching profiles
 
-    print(line)
+    #print(line)
 
 
 def longest_match(sequence, subsequence):
