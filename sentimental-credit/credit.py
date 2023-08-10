@@ -5,9 +5,17 @@ numbers = list()
 for i in number:
     numbers.append(int(i))
 sum = 0
-for j in range(-2,-len(numbers) - 1,-2):
+range_stop = -len(numbers) - 1
+for j in range(-2,range_stop,-2):
     num = numbers[j] * 2
-    sum += (num / 10) + (num % 10) if num > 9 else sum + num
+    if num > 9:
+       sum += int((num / 10)) + (num % 10)
+    else:
+        sum += num
+for k in range(-1,range_stop,-2):
+    print(j,end = '')
+ #   sum += numbers[j]
+
 print(sum)
 
 
