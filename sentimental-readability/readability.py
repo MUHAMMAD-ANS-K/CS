@@ -9,5 +9,5 @@ for i in sentence:
         words += 1
     if i in ['!','.','?']:
         sentences += 1
-index = 0.0588 * (words/letters) - 0.296 * S - 15.8
+index = 0.0588 * L - 0.296 * S - 15.8
 print(index)
