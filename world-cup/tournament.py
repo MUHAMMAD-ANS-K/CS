@@ -40,7 +40,7 @@ def main():
 
 
 def simulate_game(team1, team2):
-    #Simulate a game.
+    # Simulate a game.
     rating1 = team1["rating"]
     rating2 = team2["rating"]
     # Using probability and randomness to name winner beacause its a soccer match.
@@ -50,7 +50,7 @@ def simulate_game(team1, team2):
 
 
 def simulate_round(teams):
-    #Simulate a round. Return a list of winning teams.
+    # Simulate a round. Return a list of winning teams.
     winners = []
 
     # Simulate games for all pairs of teams
@@ -69,8 +69,9 @@ def simulate_tournament(teams):
         teams = simulate_round(teams)
         # Checking if only one team left.
         if len(teams) == 1:
-            ''' As teams is a list of dictionaries.
-              Two square brackets.One for getting the individual dictionary and the other for getting team's name.'''
+            """As teams is a list of dictionaries.
+            Two square brackets.One for getting the individual dictionary and the other for getting team's name.
+            """
             return teams[0]["team"]
 
 
