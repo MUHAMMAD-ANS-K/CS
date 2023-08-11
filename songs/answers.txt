@@ -1,0 +1,7 @@
+Answer1:
+    I can calculate the averages of tempo, danceability and valence by simply using the AVG function
+    on all the songs that will give me back a table. Based on the table, I can calculate their Aura.
+
+Answer2:
+    It is not a good way because person might only use spotify when he is in a particular mood or maybe
+    two person maybe using a single account. So, it is not a good way.
