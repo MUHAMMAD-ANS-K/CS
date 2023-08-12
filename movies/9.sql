@@ -1,1 +1,1 @@
-SELECT 
+SELECT name, birth FROM people JOIN movies 
