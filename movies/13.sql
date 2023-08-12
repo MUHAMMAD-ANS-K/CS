@@ -15,4 +15,6 @@ WHERE
     WHERE
       name = 'Kevin Bacon'
       AND birth = 1958
-  ) ORDER BY name;
+  )
+GROUP BY
+  name;
