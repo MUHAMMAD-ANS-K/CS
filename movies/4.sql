@@ -1,1 +1,1 @@
-SELECT title, rating FROM movies WHERE
+SELECT title, rating FROM movies JOIN ratings ON movies.id = ratings.movies_id WHERE rating = '10.0';
