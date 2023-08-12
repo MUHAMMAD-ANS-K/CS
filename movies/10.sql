@@ -1,1 +1,1 @@
-SELECT name, rating FROM people JOIN
+SELECT name, rating FROM people JOIN directors ON people.id = directors.person_id JOIN movies ON
