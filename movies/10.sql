@@ -1,1 +1,1 @@
-SELECT name, rating FROM people 
+SELECT name, rating FROM people JOIN
