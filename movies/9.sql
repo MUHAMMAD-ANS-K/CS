@@ -1,1 +1,1 @@
-SELECT name, birth FROM people JOIN movies 
+SELECT name, birth FROM people JOIN stars ON pe
