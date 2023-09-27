@@ -13,7 +13,7 @@ def main():
         print("text/plain")
     elif file_extension == "zip":
         print("application/zip")
-    elif file_extension == "bin"
-
+    elif file_extension == "bin":
+        print("application/octet-stream")
 if __name__ == "__main__":
     main()
