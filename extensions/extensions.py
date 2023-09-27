@@ -1,9 +1,9 @@
 def main():
-    file = input("File name: ").strip()
+    file = input("File name: ").strip().lower()
     _, file_extension = file.split('.')
     if file_extension == "gif":
         print("image/gif")
-    elif file_extension == "jpg" or "jpeg":
+    elif file_extension == "jpg" or file_extension == "jpeg":
         print("image/jpeg")
     elif file_extension == "png":
         print("image/png")
