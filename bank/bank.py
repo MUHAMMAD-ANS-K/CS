@@ -1,7 +1,8 @@
 def main():
-    greeting = input("Greeting: ").lower()
-    if startswith('h'):
-        if greeting ==
+    greeting = input("Greeting: ").lower().strip()
+    if startswith("h"):
+        if greeting == "hello":
+            print()
 
 if __name__ == "__main__":
     main()
