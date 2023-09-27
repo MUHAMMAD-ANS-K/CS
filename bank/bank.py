@@ -1,6 +1,6 @@
 def main():
     greeting = input("Greeting: ").lower().strip()
-    if startswith("h"):
+    if greeting.startswith("h"):
         if greeting == "hello":
             print("$0")
         else:
