@@ -1,6 +1,6 @@
 def main():
     file = input("File name: ").strip().lower()
-    _, file_extension = file.split('.')
+    _, file_extension = file.split('.', maxsplit = 1)
     if file_extension == "gif":
         print("image/gif")
     elif file_extension == "jpg" or file_extension == "jpeg":
@@ -13,7 +13,7 @@ def main():
         print("text/plain")
     elif file_extension == "zip":
         print("application/zip")
-
+    elif file_extension == "bin"
 
 if __name__ == "__main__":
     main()
