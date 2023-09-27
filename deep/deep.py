@@ -1,10 +1,9 @@
 def main():
-
-    s = input('What is the Answer to the Great Question of Life, the Universe, and Everything?').casefold().strip()
-    #s = s.ca
-    if s == 'forty two' or s == 'forty-two' or s == '42':
-        print('Yes')
+    answer = input("What is the Answer to the Great Question of Life, the Universe, and Everything? ").strip().lower()
+    if answer == "42" or answer == "forty-two" or answer == "forty two":
+        print("Yes")
     else:
-        print('No')
+        print("No")
 
-main()
+if __name__ == '__main__':
+    main()
