@@ -1,7 +1,8 @@
 def main():
-    user_input = input("Input: ").strip().lower()
+    user_input = input("Input: ").strip()
     for chr in user_input:
-        match(chr):
+        c = chr.lower()
+        match(c):
             case 'a' | 'e' | 'i' | 'o' | 'u':
                 pass
             case _:
