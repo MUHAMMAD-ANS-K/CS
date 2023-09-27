@@ -1,19 +1,20 @@
 def main():
-    file = input("File name: ").strip().lower()
-    _, file_extension = file.rsplit('.', maxsplit = 1)
-    if file_extension == "gif":
+    file_extension = input("File name: ").strip().lower()
+    if file_extension.endswith("gif"):
         print("image/gif")
-    elif file_extension == "jpg" or file_extension == "jpeg":
+    elif file_extension.endswith("jpg") or file_extension.endswith("jpeg"):
         print("image/jpeg")
-    elif file_extension == "png":
+    elif file_extension.endswith("png"):
         print("image/png")
-    elif file_extension == "pdf":
+    elif file_extension.endswith("pdf"):
         print("application/pdf")
-    elif file_extension == "txt":
+    elif file_extension.endswith("txt"):
         print("text/plain")
-    elif file_extension == "zip":
+    elif file_extension.endswith("zip"):
         print("application/zip")
-    elif file_extension == "bin":
+    elif file_extension.endswith("bin"):
+        print("application/octet-stream")
+    else:
         print("application/octet-stream")
 if __name__ == "__main__":
     main()
