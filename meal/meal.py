@@ -1,7 +1,8 @@
 def main():
     time = input("What time is it? ").strip()
     time = convert(time)
-    if time
+    if 8.0 => time => 7.0:
+        print
 
 def convert(time):
     hours, minutes = time.split(":")
