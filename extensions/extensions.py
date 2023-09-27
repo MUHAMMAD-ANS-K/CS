@@ -1,6 +1,6 @@
 def main():
     file = input("File name: ").strip().lower()
-    _, file_extension = file.split('.', maxsplit = 1)
+    _, file_extension = file.rsplit('.', maxsplit = 1)
     if file_extension == "gif":
         print("image/gif")
     elif file_extension == "jpg" or file_extension == "jpeg":
