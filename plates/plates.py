@@ -17,7 +17,8 @@ def is_valid(s):
             temp = s[i + 1]
             return False
     for char in s:
-        if char == "." or char == " " or char =="
+        if char == "." or char == " " or char == "," ot char == "!":
+        return False
     return True
 
 main()
