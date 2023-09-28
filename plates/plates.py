@@ -19,8 +19,8 @@ def is_valid(s):
         if s[i + 1].isnumeric():
             if s[i + 1] == "0":
                 return False
-            while i < len(s):
-                if s[i].isalpha():
+            while (i + 1) < len(s):
+                if s[i + 1].isalpha():
                     return False
                 i += 1
             return True
