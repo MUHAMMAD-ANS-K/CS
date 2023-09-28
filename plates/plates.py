@@ -14,6 +14,7 @@ def is_valid(s):
             return False
     for i in range(len(s) - 2):
         if s[i + 1].isnumeric():
+            
             return False
 
     return True
