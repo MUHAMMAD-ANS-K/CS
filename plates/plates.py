@@ -14,7 +14,13 @@ def is_valid(s):
             return False
     for i in range(len(s) - 2):
         if s[i + 1].isnumeric():
-            temp = s[i + 1]
+            if s[i + 1] == "0":
+                return False
+            while i < len(s):
+                if s[i].isalpha():
+                    return False
+                i += 1
+
             return False
     for char in s:
         if char == "." or char == " " or char == "," ot char == "!":
