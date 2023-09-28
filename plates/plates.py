@@ -7,7 +7,7 @@ def main():
 
 
 def is_valid(s):
-    if 7 < len(s) < 2:
+    if len(s) < 2 or len(s) > 7:
         return False
     for chr in s[:2]:
         if chr.isnumeric():
