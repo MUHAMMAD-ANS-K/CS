@@ -13,7 +13,7 @@ def is_valid(s):
         if chr.isnumeric():
             return False
     for char in s:
-        if char == "." or char == " " or char == "," ot char == "!":
+        if char == "." or char == " " or char == "," or char == "!":
             return False
     for i in range(len(s) - 2):
         if s[i + 1].isnumeric():
