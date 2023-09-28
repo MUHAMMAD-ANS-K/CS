@@ -16,7 +16,8 @@ def is_valid(s):
         if s[i + 1].isnumeric():
             temp = s[i + 1]
             return False
-
+    for char in s:
+        if char == "." or char == " " or char =="
     return True
 
 main()
