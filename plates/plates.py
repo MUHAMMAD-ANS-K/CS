@@ -7,7 +7,8 @@ def main():
 
 
 def is_valid(s):
-    for chr in s[]
+    if len(s) < 2:
+        return False
 
 
 main()
