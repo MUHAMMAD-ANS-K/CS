@@ -12,6 +12,10 @@ def is_valid(s):
     for chr in s[:2]:
         if chr.isnumeric():
             return False
+    for i in range(len(s) - 2):
+        if s[i + 1].isnumeric():
+            return False
+
     return True
 
 main()
