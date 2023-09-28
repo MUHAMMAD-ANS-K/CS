@@ -9,6 +9,9 @@ def main():
 def is_valid(s):
     if len(s) < 2:
         return False
-
+    for chr in s[:2]:
+        if chr.isnumeric():
+            return False
+    return True
 
 main()
